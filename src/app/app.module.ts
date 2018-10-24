@@ -19,6 +19,7 @@ import { ProductDetailComponent } from './components/products/product-detail/pro
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { QuoteComponent } from './components/quote/quote.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { QuoteComponent } from './components/quote/quote.component';
     ProductDetailComponent,
     StyleGuideComponent,
     CarouselComponent,
-    QuoteComponent
+    QuoteComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
