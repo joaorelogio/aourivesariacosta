@@ -1,0 +1,320 @@
+/* ******************************* ********* ****************************** */
+/* ******************************* VARIABLES ****************************** */
+/* ******************************* ********* ****************************** */
+/* ANIMATIONS & TRANSITION */
+$ease-in-quad:      cubic-bezier(0.550,  0.085, 0.680, 0.530);
+$ease-in-cubic:     cubic-bezier(0.550,  0.055, 0.675, 0.190);
+$ease-in-quart:     cubic-bezier(0.895,  0.030, 0.685, 0.220);
+$ease-in-quint:     cubic-bezier(0.755,  0.050, 0.855, 0.060);
+$ease-in-sine:      cubic-bezier(0.470,  0.000, 0.745, 0.715);
+$ease-in-expo:      cubic-bezier(0.950,  0.050, 0.795, 0.035);
+$ease-in-circ:      cubic-bezier(0.600,  0.040, 0.980, 0.335);
+$ease-in-back:      cubic-bezier(0.600, -0.280, 0.735, 0.045);
+
+$ease-out-quad:     cubic-bezier(0.250,  0.460, 0.450, 0.940);
+$ease-out-cubic:    cubic-bezier(0.215,  0.610, 0.355, 1.000);
+$ease-out-quart:    cubic-bezier(0.165,  0.840, 0.440, 1.000);
+$ease-out-quint:    cubic-bezier(0.230,  1.000, 0.320, 1.000);
+$ease-out-sine:     cubic-bezier(0.390,  0.575, 0.565, 1.000);
+$ease-out-expo:     cubic-bezier(0.190,  1.000, 0.220, 1.000);
+$ease-out-circ:     cubic-bezier(0.075,  0.820, 0.165, 1.000);
+$ease-out-back:     cubic-bezier(0.175,  0.885, 0.320, 1.275);
+
+$ease-in-out-quad:  cubic-bezier(0.455,  0.030, 0.515, 0.955);
+$ease-in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
+$ease-in-out-quart: cubic-bezier(0.770,  0.000, 0.175, 1.000);
+$ease-in-out-quint: cubic-bezier(0.860,  0.000, 0.070, 1.000);
+$ease-in-out-sine:  cubic-bezier(0.445,  0.050, 0.550, 0.950);
+$ease-in-out-expo:  cubic-bezier(1.000,  0.000, 0.000, 1.000);
+$ease-in-out-circ:  cubic-bezier(0.785,  0.135, 0.150, 0.860);
+$ease-in-out-back:  cubic-bezier(0.680, -0.550, 0.265, 1.550);
+
+/* ******************************* ****** ****************************** */
+/* ******************************* MIXINS ****************************** */
+/* ******************************* ****** ****************************** */
+
+/* TRANSITION */
+// @include transition();
+@mixin transition($property:all, $duration:0.5s, $ease:ease-in-out, $delay:0s){
+    transition: $property $duration $ease $delay;
+}
+
+/* TRANSFORM */
+@mixin transform($content) {
+    transform: $content;
+}
+
+/* TRANSFORM STYLE */
+@mixin transform-style($content) {
+    transform-style: $content;
+}
+
+/* TRANSFORM ORIGIN */
+@mixin transform-origin($content) {
+    transform-origin: $content;
+}
+
+/* PERSPECTIVE */
+@mixin perspective($content) {
+    perspective: $content;
+}
+
+/* PERSPECTIVE ORIGIN */
+@mixin perspective-origin($value1, $value2) {
+    perspective-origin: $value1 $value2;
+}
+
+/* BACKGROUND */
+// @include bg-opacity(#000,0.85);
+@mixin bg-opacity($color: #000000, $opacity: 1) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+/* BACKGROUND GRADIENT LINEAR */
+@mixin linear-gradient($degree:0, $firstColor:#000000, $secondColor:#FFFFFF) {
+    background-image: -o-linear-gradient($degree, $firstColor,$secondColor);
+    background-image: -moz-linear-gradient($degree, $firstColor,$secondColor);
+    background-image: -webkit-linear-gradient($degree, $firstColor,$secondColor);
+    background-image: linear-gradient($degree, $firstColor,$secondColor); 
+}
+
+/* BACKGROUND GRADIENT RADIAL */
+@mixin radial-gradient($sizeShapePos: 100% 100% circle, $firstColor:#000000, $secondColor:#FFFFFF) {
+    background-image: -o-radial-gradient($sizeShapePos, $firstColor,$secondColor);
+    background-image: -moz-radial-gradient($sizeShapePos, $firstColor,$secondColor);
+    background-image: -webkit-radial-gradient($sizeShapePos, $firstColor,$secondColor);
+    background-image: radial-gradient($sizeShapePos, $firstColor,$secondColor);
+}
+
+/* ELEMENT SIZE */
+// @include size(10px, 10px);
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/* OPACITY */
+@mixin opacity($value){
+    filter: alpha(opacity=$value*100);
+    opacity: $value;
+}
+
+/* FILTER */
+@mixin filter($content){
+  -webkit-filter:$content;
+  filter:$content;
+}
+
+/* BORDER */
+// Usage shorthand: @include border(1px solid #000);
+@mixin border($border) {
+  border: $border;
+}
+// Usage longhand: @include border-all(1px, solid, #000);
+@mixin border-all($width: 2px, $style: solid, $color: #000000) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+/* BORDER RADIUS ALL SIDES */
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+
+/* BORDER RADIUS SINGLE SIDE */
+@mixin border-top-radius($radius) {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+}
+@mixin border-left-radius($radius) {
+    border-bottom-left-radius: $radius;
+    border-top-left-radius: $radius;
+}
+@mixin border-bottom-radius($radius) {
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+@mixin border-right-radius($radius) {
+    border-bottom-right-radius: $radius;
+    border-top-right-radius: $radius;
+}
+
+/* BOX SIZING */
+@mixin box-sizing($type: border-box){
+    box-sizing:$type;
+}
+
+/* TEXT-SHADOW */
+@mixin text-shadow($x:0, $y:0, $blur:2px, $color:#000000) {
+    text-shadow: $x $y $blur $color;
+}
+
+/* CALC PROPERTY */
+@mixin calc($property, $value) {
+  #{$property}: calc(#{$value});
+}
+
+/* WORD-WRAP */
+@mixin word-wrap($wrap: break-word) {
+  overflow-wrap: $wrap;
+  word-wrap: $wrap;
+
+  @if $wrap == break-word {
+    word-break: break-all;
+  } @else {
+    word-break: $wrap;
+  }
+}
+
+/* INPUTS / RADIO / CHACK / SELECT - APPEARANCE-NONE */
+@mixin appearance-none {
+    appearance: none;
+}
+
+/* ******************************* ****** ****************************** */
+/* ******************************* SHAPES ****************************** */
+/* ******************************* ****** ****************************** */
+
+/* TRIANGLE */
+@mixin triangle($size, $color, $direction) {
+  $width: nth($size, 1);
+  $height: nth($size, length($size));
+  $foreground-color: nth($color, 1);
+  $background-color: if(length($color) == 2, nth($color, 2), transparent);
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    $width: $width / 2;
+    $height: if(length($size) > 1, $height, $height/2);
+
+    @if $direction == up {
+      border-bottom: $height solid $foreground-color;
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+    } @else if $direction == right {
+      border-bottom: $width solid $background-color;
+      border-left: $height solid $foreground-color;
+      border-top: $width solid $background-color;
+    } @else if $direction == down {
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+      border-top: $height solid $foreground-color;
+    } @else if $direction == left {
+      border-bottom: $width solid $background-color;
+      border-right: $height solid $foreground-color;
+      border-top: $width solid $background-color;
+    }
+  } @else if ($direction == up-right) or ($direction == up-left) {
+    border-top: $height solid $foreground-color;
+
+    @if $direction == up-right {
+      border-left:  $width solid $background-color;
+    } @else if $direction == up-left {
+      border-right: $width solid $background-color;
+    }
+  } @else if ($direction == down-right) or ($direction == down-left) {
+    border-bottom: $height solid $foreground-color;
+
+    @if $direction == down-right {
+      border-left:  $width solid $background-color;
+    } @else if $direction == down-left {
+      border-right: $width solid $background-color;
+    }
+  } @else if ($direction == inset-up) {
+    border-color: $background-color $background-color $foreground-color;
+    border-style: solid;
+    border-width: $height $width;
+  } @else if ($direction == inset-down) {
+    border-color: $foreground-color $background-color $background-color;
+    border-style: solid;
+    border-width: $height $width;
+  } @else if ($direction == inset-right) {
+    border-color: $background-color $background-color $background-color $foreground-color;
+    border-style: solid;
+    border-width: $width $height;
+  } @else if ($direction == inset-left) {
+    border-color: $background-color $foreground-color $background-color $background-color;
+    border-style: solid;
+    border-width: $width $height;
+  }
+}
+
+/* ******************************* ************* ****************************** */
+/* ******************************* MEDIA QUERIES ****************************** */
+/* ******************************* ************* ****************************** */
+
+$min-mobile-width: 0px;
+$max-mobile-width: 512px;
+$min-tablet-width: 513px;
+$max-tablet-width: 768px;
+$min-laptop-width: 769px;
+$max-laptop-width: 1023px;
+$min-desktop-width: 1024px;
+$max-desktop-width: 1280px; 
+
+@mixin mobile {
+  @media (min-width: #{$min-mobile-width}) and (max-width: #{$max-mobile-width}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$min-mobile-width}) and (max-width: #{$max-tablet-width}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$min-mobile-width}) and (max-width: #{$max-laptop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$min-desktop-width}) and (max-width: #{$max-desktop-width}) {
+    @content;
+  }
+}
+
+
+/* ******* CUSTOM MEDIA SIZES ********** */
+/*usar esta mixin quando se quer expecificar um limite de 0px a Xpx.*/
+  /*ex:
+      div{
+        @include media-smaller-than(1000px);
+      }
+  */
+@mixin media-smaller-than($value) {
+  
+  @media (min-width: 0px) and (max-width: #{$value}) {
+    @content;
+  }
+}
+
+/*usar esta mixin quando se quer expecificar um limite de Xpx a Ypx.*/
+  /*ex:
+      div{
+        @include media-between(900px,1000px);
+      }
+  */
+@mixin media-between($smallerValue,$biggerValue) {
+  
+  @media (min-width: #{$smallerValue}) and (max-width: #{$biggerValue}) {
+    @content;
+  }
+}
+
+/* ********************* ORIENTATION ******************* */
+@mixin portrait{
+  @media (orientation: portrait){
+    @content;
+  }
+}
+
+@mixin landscape{
+  @media (orientation: landscape){
+    @content;
+  }
+}

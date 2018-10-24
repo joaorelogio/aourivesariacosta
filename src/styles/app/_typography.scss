@@ -1,0 +1,36 @@
+h1 {
+  @extend %title;
+  font-size:32px;
+}
+
+h2 {
+  @extend %title;
+  font-size:30px;
+}
+
+h3 {
+  @extend %subtitle;
+  font-size:26px;
+}
+
+h4 {
+  @extend %subtitle;
+  font-size:22px;
+}
+
+h5 {
+  @extend %subtitle;
+  font-size:18px;
+}
+
+h6 {
+  @extend %subtitle;
+  font-size:14px;
+}
+
+p {
+  text-align: justify;
+  a {
+    @extend %link;
+  }
+}

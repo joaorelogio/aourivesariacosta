@@ -1,0 +1,14 @@
+.home {
+  padding-top: 0;
+  // CAROUSEL
+  .carousel {
+    .carousel-indicators {
+      bottom: 0;
+      li {
+        width: 10px;
+        height: 10px;
+        @include border-radius(50%);
+      }
+    }
+  }
+}

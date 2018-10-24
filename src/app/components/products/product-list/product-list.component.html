@@ -1,0 +1,16 @@
+<section class="product__list">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" *ngFor="let item of this.products">
+        <div class="card">
+          <img class="card-img-top" src="{{ item.detail.picture }}" alt="{{ item.product_text }}">
+          <div class="card-body">
+            <h4 class="card-title">{{ item.collecttion }}</h4>
+            <p class="card-text">{{ item.product_text }}</p>
+            <button type="button" class="btn aoc-btn btn-blue float-right" (click)="openProductDetail(item.id)">Detalhe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

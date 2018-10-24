@@ -1,0 +1,36 @@
+@import '../../../styles/helpers/_ux_mixins';
+@import '../../../styles/helpers/_ux_variables';
+@import '../../../styles/helpers/_ux_extends';
+
+// COLORS PATTERNS
+// SCSS TO DELETE
+.square {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid black;
+  margin: 0 5px;
+
+  > * {
+    @extend %center-vert;
+    display: none;
+    padding: 0 .5rem
+  }
+  
+  &.gray {
+    background-color: $gray
+  }
+  &.grayDark {
+    background-color: $grayDark
+  }
+  &.blueLight {
+    background-color: $blueLight
+  }
+  &.blue {
+    background-color: $blue
+  }
+  &.blueDark {
+    background-color: $blueDark
+  }
+}

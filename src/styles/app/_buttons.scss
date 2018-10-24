@@ -1,0 +1,87 @@
+.aoc-btn {
+	color: white;
+	border-width: 1px;
+	border-style: solid;
+	border-color: inherit;
+	background-color: inherit;
+	border-radius: 25px;
+	box-sizing: border-box;
+	margin: 0 5px 10px;
+	outline: none;
+	min-width: 115px;
+	cursor: pointer;
+	
+	&:focus {
+		outline: 0;
+	}
+
+	&:disabled {
+		cursor: default;
+	}
+
+	&.btn-line {
+		background-color: transparent !important;
+
+		&.btn-blue {
+			color: $blue;
+			&:hover, &:focus, &:active, &.active {
+				color: darken( $blue, 25% );
+			}
+			&:disabled {
+				color: lighten( $blue, 25% );
+			}
+		}
+
+		&.btn-gray {
+			color: $gray;
+			&:hover, &:focus, &:active, &.active {
+				color: darken( $gray, 25% );
+			}
+			&:disabled {
+				color: lighten( $gray, 25% );
+			}
+		}
+	}
+
+	&.btn-blue {
+		background-color: $blue;
+		border-color: $blue;
+		&:hover, &:focus, &:active, &.active {
+			background-color: darken( $blue, 25% );
+			border-color: darken( $blue, 25% );
+		}
+
+		&:disabled {
+			background-color: lighten( $blue, 25% );
+			border-color: lighten( $blue, 25% );
+			&:hover, &:focus, &:active, &.active {
+				background-color: lighten( $blue, 25% );
+				border-color: lighten( $blue, 25% );
+			}
+		}
+	}
+
+	&.btn-gray {
+		background-color: $gray;
+		border-color: $gray;
+		&:hover, &:focus, &:active, &.active {
+			background-color: darken( $gray, 25% );
+			border-color: darken( $gray, 25% );
+		}
+
+		&:disabled {
+			background-color: lighten( $gray, 25% );
+			border-color: lighten( $gray, 25% );
+			&:hover, &:focus, &:active, &.active {
+				background-color: lighten( $gray, 25% );
+				border-color: lighten( $gray, 25% );
+			}
+		}
+	}
+
+	&.btn-icon {
+		padding: 0.5em;
+		border-radius: 100%;
+		min-width: 2.5em;
+	}
+}

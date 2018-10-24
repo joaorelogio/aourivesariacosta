@@ -1,0 +1,16 @@
+.products {
+  padding: 0;
+  .product {
+    &__list {
+      .card {
+        margin-bottom: 30px;
+        button {
+          margin: 0;
+        }
+      }
+    }
+    &__detail {
+      background-color: $gray;
+    }
+  }
+}

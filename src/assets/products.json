@@ -1,0 +1,86 @@
+[
+  {
+    "id": "0001",
+    "collecttion": "Alianças",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm"
+    }
+  },
+  {
+    "id": "0002",
+    "collecttion": "Aneis Noivado",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm"
+    }
+  },
+  {
+    "id": "0003",
+    "collecttion": "Filigrana",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm"
+    }
+  },
+  {
+    "id": "0004",
+    "collecttion": "Marcassites",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm"
+    }
+  },
+  {
+    "id": "0005",
+    "collecttion": "Zirconias",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm"
+    }
+  },
+  {
+    "id": "0006",
+    "collecttion": "Porcelanas",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm"
+    }
+  },
+  {
+    "id": "0007",
+    "collecttion": "Santos de Portugal",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm"
+    }
+  }
+]

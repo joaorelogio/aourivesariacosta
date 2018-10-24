@@ -1,0 +1,42 @@
+// TITLES & TEXTS
+%title {
+  font-family: $aoc-title-font;
+}
+%subtitle {
+  font-family: $aoc-subtitle-font;
+}
+%link {
+  color: $blue !important;
+  text-decoration: none !important;
+  &:hover {
+    color: $blue !important;
+    text-decoration: underline !important;
+  }
+  &:not([href]),
+  &:not([tabindex]) {
+    color: $blue !important;
+    text-decoration: none !important;
+    @extend %cursor-pointer;
+    &:hover {
+      color: $blue !important;
+      text-decoration: underline !important;
+    }
+  }
+}
+%cursor-pointer {
+  cursor: pointer;
+}
+
+/* CENTER Y */
+%center-vert {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+/* CENTER X */
+%center-horz {
+  position: relative;
+  left: 50%;
+  @include transform(translateX(-50%));
+}
