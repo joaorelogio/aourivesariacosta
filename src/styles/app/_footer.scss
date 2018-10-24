@@ -1,0 +1,19 @@
+$footer-height: 60px;
+.container-body {
+  min-height: calc(100% - #{$footer-height});
+}
+.footer {
+  background-color: $gray;
+  height: $footer-height;
+  width: 100%;
+  z-index: 10;
+  padding: 0;
+  .container-fluid {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+      width: 100px;
+    }
+  }
+}

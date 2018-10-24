@@ -44,6 +44,26 @@ $ease-in-out-back:  cubic-bezier(0.680, -0.550, 0.265, 1.550);
     transform: $content;
 }
 
+// Rotate
+@mixin rotate ($deg) { 
+	@include transform(rotate(#{$deg}deg));
+}
+
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
 /* TRANSFORM STYLE */
 @mixin transform-style($content) {
     transform-style: $content;

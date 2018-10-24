@@ -12,8 +12,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.quoteTxt = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mi purus. Nunc justo turpis, commodo sit amet orci in, viverra scelerisque erat. Maecenas luctus vehicula purus, et lobortis tellus volutpat in. Phasellus ac ornare augue, eget varius leo. Proin fermentum, lorem ac viverra imperdiet, ipsum dolor condimentum lacus, vel ullamcorper odio tortor non arcu. Integer vitae orci varius, interdum dolor in, dictum lacus.';
-    this.quoteAuthor = 'Finibus Bonorum';
+    this.quoteTxt = 'O saber e a arte são portugueses. As matérias primas também. Na tradição da melhor ourivesaria nacional, criamos preciosidades que vencem o tempo e prolongam a memória. São pequenos tesouros da nossa identidade, joías retiradas da cultura e do imaginário de um povo. Venha conhecê-las. Afinal, Portugal vale ouro.';
+    this.quoteAuthor = 'A Ourivesaria Costa';
   }
 
 }
