@@ -1,8 +1,22 @@
 .quote {
   background-color: $blue;
-
   h1 {
-    color: white;
     font-family: $aoc-quote-font;
+    color: white;
+    &::before {
+      content: '\22';
+      float: left;
+      font-size: 150%;
+    }
+    &::after {
+      content: '\22';
+      float: right;
+      font-size: 150%;
+    }
+  }
+  .blockquote-footer {
+    font-family: $aoc-subtitle-font;
+    font-size: 100%;
+    color: white;
   }
 }
