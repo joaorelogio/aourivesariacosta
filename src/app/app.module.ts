@@ -18,6 +18,7 @@ import { ProductDetailComponent } from './components/products/product-detail/pro
 // TODO: DELETE COMPONENT IN THE END
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { QuoteComponent } from './components/quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ProductListComponent,
     ProductDetailComponent,
     StyleGuideComponent,
-    CarouselComponent
+    CarouselComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
