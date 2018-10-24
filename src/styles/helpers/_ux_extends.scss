@@ -23,6 +23,16 @@
     }
   }
 }
+%heading_bg {
+  background-image: url(/assets/heading_bg.png);
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+%heading_bg_line {
+  background-image: url(/assets/heading_bg_line.png);
+  background-repeat: repeat-x;
+  background-position: left center;
+}
 %cursor-pointer {
   cursor: pointer;
 }

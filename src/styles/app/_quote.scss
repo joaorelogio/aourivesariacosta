@@ -3,15 +3,14 @@
   h1 {
     font-family: $aoc-quote-font;
     color: white;
-    &::before {
+    &::before,
+    &::after {
       content: '\22';
       float: left;
       font-size: 150%;
     }
     &::after {
-      content: '\22';
       float: right;
-      font-size: 150%;
     }
   }
   .blockquote-footer {
