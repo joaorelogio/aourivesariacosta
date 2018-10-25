@@ -1,6 +1,6 @@
 $footer-height: 60px;
 .container-body {
-  min-height: calc(100% - #{$footer-height});
+  @include calc(min-height, 100% - #{$footer-height})
 }
 .footer {
   background-color: $gray;
@@ -8,12 +8,33 @@ $footer-height: 60px;
   width: 100%;
   z-index: 10;
   padding: 0;
+  @include media-smaller-than(767px) {
+    .container-fluid {
+      text-align: center;
+      img {
+        display: none;
+      }
+      small {
+        top: 0;
+        @include transform(none);
+        float: none;
+      }
+    }
+  }
+  @include media-bigger-than(768px) {
+    .container-fluid {
+      img {
+        width: 100px;
+      }
+      small {
+        float: right;
+      }
+    }
+  }
   .container-fluid {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    img {
-      width: 100px;
+    @extend %center-vert;
+    small {
+      @extend %center-vert;
     }
   }
 }
