@@ -12,5 +12,10 @@
     &__detail {
       background-color: $gray;
     }
+    &__item {
+      .block-image {
+        @extend %block-image
+      }
+    }
   }
 }

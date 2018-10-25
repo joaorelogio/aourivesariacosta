@@ -38,7 +38,7 @@
 }
 
 /* IMAGES HOVER */
-%block-images {
+%block-image {
   display: block;
   overflow: hidden;
   width: 100%;
@@ -46,6 +46,7 @@
   border-style: solid;
   border-color: $gray;
   > img {
+    width: 100%;
     @include transition();
     @include scale(1);
     &:hover {

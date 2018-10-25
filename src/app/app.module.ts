@@ -20,6 +20,7 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProductItemComponent } from './components/products/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FooterComponent } from './components/footer/footer.component';
     StyleGuideComponent,
     CarouselComponent,
     QuoteComponent,
-    FooterComponent
+    FooterComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,
