@@ -1,7 +1,7 @@
 [
   {
     "id": "0001",
-    "collecttion": "Alianças",
+    "collection": "Alianças",
     "product_text": "Lorem ipsum",
     "isSlide": false,
     "detail": {
@@ -14,7 +14,7 @@
   },
   {
     "id": "0002",
-    "collecttion": "Aneis Noivado",
+    "collection": "Aneis Noivado",
     "product_text": "Lorem ipsum",
     "isSlide": false,
     "detail": {
@@ -27,7 +27,7 @@
   },
   {
     "id": "0003",
-    "collecttion": "Filigrana",
+    "collection": "Filigrana",
     "product_text": "Lorem ipsum",
     "isSlide": false,
     "detail": {
@@ -40,7 +40,7 @@
   },
   {
     "id": "0004",
-    "collecttion": "Marcassites",
+    "collection": "Marcassites",
     "product_text": "Lorem ipsum",
     "isSlide": false,
     "detail": {
@@ -53,7 +53,7 @@
   },
   {
     "id": "0005",
-    "collecttion": "Zirconias",
+    "collection": "Zirconias",
     "product_text": "Lorem ipsum",
     "isSlide": false,
     "detail": {
@@ -66,7 +66,7 @@
   },
   {
     "id": "0006",
-    "collecttion": "Porcelanas",
+    "collection": "Porcelanas",
     "product_text": "Lorem ipsum",
     "isSlide": false,
     "detail": {
@@ -79,7 +79,7 @@
   },
   {
     "id": "0007",
-    "collecttion": "Santos de Portugal",
+    "collection": "Santos de Portugal",
     "product_text": "Lorem ipsum",
     "isSlide": false,
     "detail": {

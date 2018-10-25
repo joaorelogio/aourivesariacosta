@@ -7,7 +7,7 @@
             <img src="{{ item.detail.picture }}" alt="{{ item.product_text }}">
           </div>
           <div class="heading_bg">
-            <h4 color="blueDark">{{ item.collecttion }}</h4>
+            <h4 color="blueDark">{{ item.collection }}</h4>
           </div>
           <div class="row">
             <div class="col-8">
@@ -21,7 +21,7 @@
           </div>
           <p color="grayDark">{{ item.detail.description }}</p>
           <button type="button" class="btn aoc-btn btn-gray float-right" (click)="openProductDetail(item.id)">Detalhe</button>
-          <button type="button" class="btn aoc-btn btn-gray float-right">Add To Basket</button>
+          <button type="button" class="btn aoc-btn btn-blue float-right">Add To Basket</button>
         </div>
       </div>
       <!-- <app-product-item *ngFor="let item of this.products" [info]="{{ item }}"></app-product-item> -->
