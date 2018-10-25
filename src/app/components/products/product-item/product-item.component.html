@@ -1,9 +1,19 @@
 <div class="product__item">
-  <div class="block-image">
-    <img src="{{ info.detail.picture }}" alt="{{ info.product_text }}">
+    <div class="block-image">
+      <img src="{{ info.detail.picture }}" alt="{{ info.product_text }}">
+    </div>
+    <h4 color="blueDark">{{ info.collecttion }}</h4>
+    <div class="row">
+      <div class="col-8">
+        <h5 color="blue">{{ info.product_text }}</h5>
+      </div>
+      <div class="col-4">
+        <div class="float-right">
+          <h5 color="blue">€ {{ info.detail.amount }}</h5>
+        </div>
+      </div>
+    </div>
+    <p>{{ info.detail.description }}</p>
+    <button type="button" class="btn aoc-btn btn-gray float-right" (click)="openProductDetail(info.id)">Detalhe</button>
+    <button type="button" class="btn aoc-btn btn-gray float-right">Add To Basket</button>
   </div>
-  <h4>{{ info.collecttion }}</h4>
-  <p class="card-text">{{ info.product_text }}</p>
-  <button type="button" class="btn aoc-btn btn-gray float-right" (click)="openProductDetail(info.id)">Detalhe</button>
-  <button type="button" class="btn aoc-btn btn-gray float-right">Add To Basket</button>
-</div>

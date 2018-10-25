@@ -13,8 +13,14 @@
       background-color: $gray;
     }
     &__item {
+      overflow: hidden;
+      margin-bottom: 20px;
       .block-image {
         @extend %block-image
+      }
+      .heading_bg,
+      .heading_bg_line {
+        margin-bottom: .25em;
       }
     }
   }

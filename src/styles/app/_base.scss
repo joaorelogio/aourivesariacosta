@@ -1,8 +1,17 @@
+*[color="blueLight"] {
+  color: $blueLight;
+}
 *[color="blue"] {
   color: $blue;
 }
+*[color="blueDark"] {
+  color: $blueDark;
+}
 *[color="gray"] {
   color: $gray;
+}
+*[color="grayDark"] {
+  color: $grayDark;
 }
 *[color="black"]{
   color: black;
