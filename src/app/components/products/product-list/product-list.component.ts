@@ -7,20 +7,39 @@ import { ProductService } from '../../../services/product.service';
 })
 export class ProductListComponent implements OnInit {
 
-  products: any;
+  allProducts: any;
+  allCollections: any;
+  filterActive: Boolean = false;
+  applyFilter: string;
 
   constructor(
     public productService: ProductService
   ) { }
 
   ngOnInit() {
-    this.productService.getAllProducts().subscribe((data) => {
-      this.products = data;
-    });
+    this.getProducts();
+    this.getCollections();
+  }
 
-    this.productService.getAllCollections().subscribe((data) => {
-      console.log(data);
+  getProducts() {
+    this.productService.getAllProducts().subscribe((data) => {
+      this.allProducts = data;
     });
+  }
+
+  getCollections() {
+    this.productService.getAllCollections().subscribe((data) => {
+      this.allCollections = data;
+    });
+  }
+
+  filter(elm) {
+    this.filterActive = false;
+    this.applyFilter = '';
+    if (elm) {
+      elm = this.applyFilter;
+      this.filterActive = true;
+    }
   }
 
 }
