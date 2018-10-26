@@ -17,7 +17,6 @@ export class ProductItemComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.info);
   }
 
   openProductDetail(id: string) {

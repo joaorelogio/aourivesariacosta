@@ -89,5 +89,18 @@
       "sizes": "35mm",
       "amount": "29,99"
     }
+  },
+  {
+    "id": "0008",
+    "collection": "Santos de Portugal",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
   }
 ]
