@@ -34,11 +34,9 @@ export class ProductListComponent implements OnInit {
   }
 
   filter(elm) {
-    this.filterActive = false;
     this.applyFilter = '';
     if (elm) {
-      elm = this.applyFilter;
-      this.filterActive = true;
+      this.applyFilter = elm;
     }
   }
 

@@ -1,8 +1,9 @@
 <section class="product__filter">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-          <button *ngFor="let collection of allCollections" type="button" [ngClass]="this.filterActive ? 'active' : ''" class="btn aoc-btn btn-blue btn-line" (click)="filter(collection)">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <button type="button" class="btn aoc-btn btn-blue btn-line" (click)="filter()">All</button>
+          <button *ngFor="let collection of allCollections" type="button" class="btn aoc-btn btn-blue btn-line" (click)="filter(collection)">
             {{ collection }}
           </button>
         </div>
