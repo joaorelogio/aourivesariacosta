@@ -2,29 +2,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let item of this.products">
-        <div class="product__item">
-          <div class="block-image">
-            <img src="{{ item.detail.picture }}" alt="{{ item.product_text }}">
-          </div>
-          <div class="heading_bg">
-            <h4 color="blueDark">{{ item.collection }}</h4>
-          </div>
-          <div class="row">
-            <div class="col-8">
-              <h5 color="blue">{{ item.product_text }}</h5>
-            </div>
-            <div class="col-4">
-              <div class="float-right">
-                <h5 color="blue">€ {{ item.detail.amount }}</h5>
-              </div>
-            </div>
-          </div>
-          <p color="grayDark">{{ item.detail.description }}</p>
-          <button type="button" class="btn aoc-btn btn-gray float-right" (click)="openProductDetail(item.id)">Detalhe</button>
-          <button type="button" class="btn aoc-btn btn-blue float-right">Add To Basket</button>
-        </div>
+        <app-product-item [info]="item"></app-product-item>
       </div>
-      <!-- <app-product-item *ngFor="let item of this.products" [info]="{{ item }}"></app-product-item> -->
     </div>
   </div>
 </section>
