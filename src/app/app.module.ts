@@ -1,8 +1,9 @@
-// ANGULAR & BOOTSTRAP
+// ANGULAR & BOOTSTRAP & LIBS
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgPipesModule } from 'ngx-pipes';
 // COMPONENTS
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +43,8 @@ import { ProductItemComponent } from './components/products/product-item/product
     BrowserModule,
     NgbModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgPipesModule
   ],
   providers: [
     ProductService
