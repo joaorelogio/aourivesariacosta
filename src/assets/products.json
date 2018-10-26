@@ -102,5 +102,109 @@
       "sizes": "35mm",
       "amount": "29,99"
     }
+  },
+  {
+    "id": "0009",
+    "collection": "Alianças",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
+  },
+  {
+    "id": "0010",
+    "collection": "Aneis Noivado",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
+  },
+  {
+    "id": "0011",
+    "collection": "Filigrana",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
+  },
+  {
+    "id": "0012",
+    "collection": "Marcassites",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
+  },
+  {
+    "id": "0013",
+    "collection": "Zirconias",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
+  },
+  {
+    "id": "0014",
+    "collection": "Porcelanas",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
+  },
+  {
+    "id": "0015",
+    "collection": "Santos de Portugal",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
+  },
+  {
+    "id": "0015",
+    "collection": "Santos de Portugal",
+    "product_text": "Lorem ipsum",
+    "isSlide": false,
+    "detail": {
+      "picture": "https://via.placeholder.com/300x200",
+      "particulars": "ouro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": "35mm",
+      "amount": "29,99"
+    }
   }
 ]
