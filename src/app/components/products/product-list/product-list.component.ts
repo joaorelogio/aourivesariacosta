@@ -7,6 +7,8 @@ import { ProductService } from '../../../services/product.service';
 })
 export class ProductListComponent implements OnInit {
 
+  title: string;
+  subtitle: string;
   allProducts: any;
   allCollections: any;
   filterActive: Boolean = false;
@@ -17,6 +19,8 @@ export class ProductListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.title = 'Produtos';
+    this.subtitle = 'Coleções';
     this.getProducts();
     this.getCollections();
   }
@@ -34,9 +38,11 @@ export class ProductListComponent implements OnInit {
   }
 
   filter(elm) {
+    this.subtitle = 'Coleções';
     this.applyFilter = '';
     if (elm) {
       this.applyFilter = elm;
+      this.subtitle = this.applyFilter;
     }
   }
 

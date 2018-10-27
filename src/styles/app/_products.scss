@@ -10,11 +10,12 @@
       }
     }
     &__list {
-      .card {
+      h1,
+      h3 {
+        @extend %subtitle;
+      }
+      .heading_bg {
         margin-bottom: 30px;
-        button {
-          margin: 0;
-        }
       }
     }
     &__item {

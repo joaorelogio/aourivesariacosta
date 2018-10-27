@@ -8,8 +8,8 @@ $footer-height: 60px;
   width: 100%;
   z-index: 10;
   padding: 0;
-  @include media-smaller-than(767px) {
-    .container-fluid {
+  @include media-smaller-than(769px) {
+    .container {
       text-align: center;
       img {
         display: none;
@@ -22,7 +22,7 @@ $footer-height: 60px;
     }
   }
   @include media-bigger-than(768px) {
-    .container-fluid {
+    .container {
       img {
         width: 100px;
       }
@@ -31,7 +31,7 @@ $footer-height: 60px;
       }
     }
   }
-  .container-fluid {
+  .container {
     @extend %center-vert;
     small {
       @extend %center-vert;
