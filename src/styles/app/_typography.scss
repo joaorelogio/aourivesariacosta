@@ -32,6 +32,16 @@ p {
     display: inline-block;
     margin: 0;
   }
+  &.text-right {
+    > * {
+      padding-left: 10px;
+    }
+  }
+  &.text-center {
+    > * {
+      padding: 0 10px;
+    }
+  }
 }
 .heading_bg {
   @extend %heading_bg;
