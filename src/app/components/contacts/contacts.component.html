@@ -1,11 +1,28 @@
 <section class="contacts">
-  <div class="container-fluid">
+  <div class="container">
+      
+
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <p>
-          contacts works!
-        </p>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <label>
+            First Name:
+            <input type="text" formControlName="firstName">
+          </label>
+          <label>
+            Last Name:
+            <input type="text" formControlName="lastName">
+          </label>
+          <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+          <button type="button" (click)="onReset()">Limpar</button>
+        </form>
       </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <pre>Form Values: {{ this.contactForm.value | json }}</pre>
+          <pre>Form Status: {{ this.contactForm.status }}</pre>
+        </div>
     </div>
   </div>
 </section>
