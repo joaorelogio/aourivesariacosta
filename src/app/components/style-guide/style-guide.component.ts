@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-style-guide',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleGuideComponent implements OnInit {
 
-  constructor() { }
+  exampleForm: FormGroup;
+
+  constructor(
+    private fb: FormBuilder
+  ) { }
 
   ngOnInit() {
+  }
+
+  onReset() {
+    this.exampleForm.reset();
   }
 
 }
