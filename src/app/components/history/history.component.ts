@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoryComponent implements OnInit {
 
+  title: string;
+  subtitle: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.title = 'a ourivesaria costa';
+    this.subtitle = 'info';
   }
 
 }
