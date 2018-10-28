@@ -17,27 +17,22 @@ select {
     position: relative;
     color: $black;
     resize: none;
-
     &::-ms-clear,
     &::-ms-reveal {
         display: none;
     }
-
     &::placeholder {
         color: $gray;
     }
-
     &:focus {
         outline: 0;
         border-color: $gray;
         box-shadow: none;
     }
-
     &:disabled {
         background-color: $grayLight;
         border-color: $grayLight;
     }
-
     &::-ms-expand {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         filter: alpha(opacity=0);
@@ -48,7 +43,10 @@ select {
 // SELECT
 .select-wrapper {
     position: relative;
-
+    background-color: $white;
+    label {
+        display: block;
+    }
     &::before {
         content: "\f107";
         font-family: FontAwesome;
@@ -59,7 +57,6 @@ select {
         font-size: 2em;
         transform: translateY(-50%);
     }
-
     select {
         padding-right: 3em;
     }
@@ -72,14 +69,12 @@ select {
     label {
         cursor: pointer;
     }
-
     &.checkbox-column,
     &.radio-column {
         label {
             display: block;
         }
     }
-
     &.checkbox-inline,
     &.radio-inline {
         padding: 0;
@@ -113,7 +108,7 @@ label {
                 color: white;
                 font-family: FontAwesome;
                 text-align: center;
-                line-height: 16px;
+                line-height: $inputCheckboxSize;
             }
         }
 
@@ -144,7 +139,7 @@ label {
                 color: $white;
                 font-family: FontAwesome;
                 text-align: center;
-                line-height: 16px;
+                line-height: $inputCheckboxSize;
                 border-radius: 100%;
             }
         }
@@ -152,8 +147,8 @@ label {
         &:checked {
             + span {
                 &::before {
-                    background: $gray;
-                    border-color: $gray;
+                    background: $blue;
+                    border-color: $blue;
                     box-shadow: inset 0 0 0 4px white;
                 }
             }
@@ -212,7 +207,7 @@ label {
 
             &:checked {
                 + span {
-                    background-color: $gray;
+                    background-color: $blue;
                     box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.25);
 
                     &::before {
@@ -233,7 +228,13 @@ label {
         }
     }
 }
-
+.form-control {
+    &:focus {
+        outline: 0;
+        border-color: $gray;
+        box-shadow: none;
+    }
+}
 .form-group {
     p {
         color: $gray;

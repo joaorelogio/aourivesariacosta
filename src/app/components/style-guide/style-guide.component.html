@@ -71,19 +71,176 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h3>Forms</h3>
-        <form [formGroup]="exampleForm">
+        <form [formGroup]="exampleForm" novalidate>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label for="formExampleInput">Example label</label>
+            <input type="text" class="form-control" id="formExampleInput" placeholder="Example input">
+            <small id="inputHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+            <div class="valid-feedback">Success</div>
+            <div class="invalid-feedback">Error</div>
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="exampleInputEmail">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+            <div class="valid-feedback">Success</div>
+            <div class="invalid-feedback">Error</div>
           </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <div class="form-group">
+            <label for="exampleInputPassword">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp"
+              placeholder="Password">
+            <small id="passwordHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</small>
+            <div class="valid-feedback">Success</div>
+            <div class="invalid-feedback">Error</div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <div class="select-wrapper">
+              <label for="exampleFormControlSelect">
+                <select class="form-control" id="exampleFormControlSelect">
+                  <option value="null">Selecione</option>
+                  <option value="Option 1">Option 1</option>
+                  <option value="Option 2">Option 2</option>
+                  <option value="Option 3">Option 3</option>
+                  <option value="Option 4">Option 4</option>
+                  <option value="Option 5">Option 5</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper">
+              <label>
+                <input type="checkbox">
+                <span></span>
+                Checkbox Right
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper">
+              <label>
+                Checkbox Left
+                <input type="checkbox">
+                <span></span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="radio-wrapper">
+              <label>
+                <input type="radio">
+                <span></span>
+                Radio Right
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="radio-wrapper">
+              <label>
+                Radio Left
+                <input type="radio">
+                <span></span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper checkbox-column">
+              <label>
+                <input type="checkbox">
+                <span></span>
+                Checkbox 1
+              </label>
+              <label>
+                <input type="checkbox">
+                <span></span>
+                Checkbox 2
+              </label>
+              <label>
+                <input type="checkbox">
+                <span></span>
+                Checkbox 2
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="radio-wrapper radio-column">
+              <label>
+                <input type="radio">
+                <span></span>
+                Radio 1
+              </label>
+              <label>
+                <input type="radio">
+                <span></span>
+                Radio 2
+              </label>
+              <label>
+                <input type="radio">
+                <span></span>
+                Radio 3
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper checkbox-inline">
+              <label>
+                <input type="checkbox">
+                <span></span>
+                Checkbox 1
+              </label>
+              <label>
+                <input type="checkbox">
+                <span></span>
+                Checkbox 2
+              </label>
+              <label>
+                <input type="checkbox">
+                <span></span>
+                Checkbox 2
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="radio-wrapper radio-inline">
+              <label>
+                <input type="radio">
+                <span></span>
+                Radio 1
+              </label>
+              <label>
+                <input type="radio">
+                <span></span>
+                Radio 2
+              </label>
+              <label>
+                <input type="radio">
+                <span></span>
+                Radio 3
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="switch-wrapper">
+              <label>
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="switch-wrapper">
+              <label>
+                  <input type="checkbox">
+                  <span class="round"></span>
+                </label>
+            </div>
           </div>
           <button type="submit" class="btn aoc-btn btn-blue" [disabled]="!exampleForm.valid">Submit</button>
           <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Reset</button>
