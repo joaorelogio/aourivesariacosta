@@ -22,7 +22,7 @@ select {
         display: none;
     }
     &::placeholder {
-        color: $gray;
+        color: $grayLight;
     }
     &:focus {
         outline: 0;
@@ -59,6 +59,18 @@ select {
     }
     select {
         padding-right: 3em;
+        background-color: transparent;
+        &:focus {
+            background-color: transparent;
+        }
+        option {
+            &:disabled {
+                color: $grayLight;
+            }
+            &.placeholder {
+                color: $grayLight;
+            }
+        }
     }
 }
 
@@ -305,4 +317,8 @@ input {
             }
         }
     }
+}
+
+::placeholder {
+    color: $grayLight;
 }

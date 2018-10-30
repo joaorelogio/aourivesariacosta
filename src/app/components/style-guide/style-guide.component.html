@@ -74,21 +74,21 @@
         <form [formGroup]="exampleForm" novalidate>
           <div class="form-group">
             <label for="formExampleInput">Example label</label>
-            <input type="text" class="form-control" id="formExampleInput" placeholder="Example input">
+            <input type="text" id="formExampleInput" placeholder="Example input">
             <small id="inputHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
             <div class="valid-feedback">Success</div>
             <div class="invalid-feedback">Error</div>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
             <div class="valid-feedback">Success</div>
             <div class="invalid-feedback">Error</div>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp"
+            <input type="password" id="exampleInputPassword" aria-describedby="passwordHelp"
               placeholder="Password">
             <small id="passwordHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.</small>
@@ -99,8 +99,8 @@
             <label for="exampleFormControlSelect1">Example select</label>
             <div class="select-wrapper">
               <label for="exampleFormControlSelect">
-                <select class="form-control" id="exampleFormControlSelect">
-                  <option value="null">Selecione</option>
+                <select id="exampleFormControlSelect">
+                  <option value="null" class="placeholder" disabled>Selecione</option>
                   <option value="Option 1">Option 1</option>
                   <option value="Option 2">Option 2</option>
                   <option value="Option 3">Option 3</option>
@@ -112,7 +112,7 @@
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+            <textarea id="exampleFormControlTextarea" rows="3" placeholder="Example textarea"></textarea>
           </div>
           <div class="form-group">
             <div class="checkbox-wrapper">
