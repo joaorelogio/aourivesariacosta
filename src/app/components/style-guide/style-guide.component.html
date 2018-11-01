@@ -76,21 +76,12 @@
             <label for="formExampleInput">Example label</label>
             <input formControlName="inputExample" type="text" id="formExampleInput" placeholder="Example input">
             <small id="inputHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
-            <span class="error-label" *ngIf="this.exampleForm.get('inputExample').errors.required">
-              Campo Obrigatório
-            </span>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail">Email address</label>
             <input formControlName="emailExample" type="email" id="exampleInputEmail" aria-describedby="emailHelp"
               placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
-            <div class="invalid-feedback" *ngIf="(this.exampleForm.get('emailExample').dirty || this.exampleForm.get('emailExample').touched) && this.exampleForm.get('emailExample').invalid && this.exampleForm.get('emailExample').errors.required">
-              Email is required.
-            </div>
-            <div *ngIf="(this.exampleForm.get('emailExample').dirty || this.exampleForm.get('emailExample').touched) && this.exampleForm.get('emailExample').invalid && this.exampleForm.get('emailExample').errors.invalidEmail">
-              Value has to be a valid email address.
-            </div>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword">Password</label>
@@ -159,17 +150,17 @@
           <div class="form-group">
             <div class="checkbox-wrapper checkbox-column">
               <label>
-                <input formControlName="checkboxColumnExample" type="checkbox" value="Checkbox 1 Column">
+                <input formControlName="checkbox1ColumnExample" type="checkbox" value="Checkbox 1 Column">
                 <span></span>
                 Checkbox 1
               </label>
               <label>
-                <input formControlName="checkboxColumnExample" type="checkbox" value="Checkbox 2 Column">
+                <input formControlName="checkbox2ColumnExample" type="checkbox" value="Checkbox 2 Column">
                 <span></span>
                 Checkbox 2
               </label>
               <label>
-                <input formControlName="checkboxColumnExample" type="checkbox" value="Checkbox 3 Column">
+                <input formControlName="checkbox3ColumnExample" type="checkbox" value="Checkbox 3 Column">
                 <span></span>
                 Checkbox 2
               </label>
@@ -197,17 +188,17 @@
           <div class="form-group">
             <div class="checkbox-wrapper checkbox-inline">
               <label>
-                <input formControlName="checkboxInlineExample" type="checkbox" value="Checkbox 1 Inline">
+                <input formControlName="checkbox1InlineExample" type="checkbox" value="Checkbox 1 Inline">
                 <span></span>
                 Checkbox 1
               </label>
               <label>
-                <input formControlName="checkboxInlineExample" type="checkbox" value="Checkbox 2 Inline">
+                <input formControlName="checkbox2InlineExample" type="checkbox" value="Checkbox 2 Inline">
                 <span></span>
                 Checkbox 2
               </label>
               <label>
-                <input formControlName="checkboxInlineExample" type="checkbox" value="Checkbox 3 Inline">
+                <input formControlName="checkbox3InlineExample" type="checkbox" value="Checkbox 3 Inline">
                 <span></span>
                 Checkbox 2
               </label>
@@ -248,8 +239,14 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn aoc-btn btn-blue" [disabled]="!exampleForm.valid">Submit</button>
-          <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Reset</button>
+          <!-- ERROR MESSAGES -->
+          <div class="form-group alert alert-danger text-center" *ngIf="exampleForm.get('emailExample').dirty && exampleForm.get('emailExample').errors && exampleForm.get('emailExample').errors.invalidPhoneNumber">
+            Email Inválido
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn aoc-btn btn-blue" [disabled]="!exampleForm.valid">Submit</button>
+            <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Reset</button>
+          </div>
         </form>
       </div>
     </div>
