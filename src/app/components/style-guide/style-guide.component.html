@@ -74,21 +74,27 @@
         <form [formGroup]="exampleForm" novalidate>
           <div class="form-group">
             <label for="formExampleInput">Example label</label>
-            <input type="text" id="formExampleInput" placeholder="Example input">
+            <input formControlName="inputExample" type="text" id="formExampleInput" placeholder="Example input">
             <small id="inputHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
-            <div class="valid-feedback">Success</div>
-            <div class="invalid-feedback">Error</div>
+            <span class="error-label" *ngIf="this.exampleForm.get('inputExample').errors.required">
+              Campo Obrigatório
+            </span>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail">Email address</label>
-            <input type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <input formControlName="emailExample" type="email" id="exampleInputEmail" aria-describedby="emailHelp"
+              placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
-            <div class="valid-feedback">Success</div>
-            <div class="invalid-feedback">Error</div>
+            <div class="invalid-feedback" *ngIf="(this.exampleForm.get('emailExample').dirty || this.exampleForm.get('emailExample').touched) && this.exampleForm.get('emailExample').invalid && this.exampleForm.get('emailExample').errors.required">
+              Email is required.
+            </div>
+            <div *ngIf="(this.exampleForm.get('emailExample').dirty || this.exampleForm.get('emailExample').touched) && this.exampleForm.get('emailExample').invalid && this.exampleForm.get('emailExample').errors.invalidEmail">
+              Value has to be a valid email address.
+            </div>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword">Password</label>
-            <input type="password" id="exampleInputPassword" aria-describedby="passwordHelp"
+            <input formControlName="passwordExample" type="password" id="exampleInputPassword" aria-describedby="passwordHelp"
               placeholder="Password">
             <small id="passwordHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.</small>
@@ -99,8 +105,8 @@
             <label for="exampleFormControlSelect1">Example select</label>
             <div class="select-wrapper">
               <label for="exampleFormControlSelect">
-                <select id="exampleFormControlSelect">
-                  <option value="null" class="placeholder" disabled>Selecione</option>
+                <select id="exampleFormControlSelect" formControlName="selectExample">
+                  <option value="" class="placeholder" disabled>Selecione</option>
                   <option value="Option 1">Option 1</option>
                   <option value="Option 2">Option 2</option>
                   <option value="Option 3">Option 3</option>
@@ -112,12 +118,12 @@
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea">Example textarea</label>
-            <textarea id="exampleFormControlTextarea" rows="3" placeholder="Example textarea"></textarea>
+            <textarea formControlName="textareaExample" id="exampleFormControlTextarea" rows="3" placeholder="Example textarea"></textarea>
           </div>
           <div class="form-group">
             <div class="checkbox-wrapper">
               <label>
-                <input type="checkbox">
+                <input formControlName="checkbox1Example" type="checkbox" value="Checkbox Right">
                 <span></span>
                 Checkbox Right
               </label>
@@ -127,7 +133,7 @@
             <div class="checkbox-wrapper">
               <label>
                 Checkbox Left
-                <input type="checkbox">
+                <input formControlName="checkbox2Example" type="checkbox" value="Checkbox Left">
                 <span></span>
               </label>
             </div>
@@ -135,7 +141,7 @@
           <div class="form-group">
             <div class="radio-wrapper">
               <label>
-                <input type="radio">
+                <input formControlName="radioExample" name="radioExample" type="radio" value="Radio Right">
                 <span></span>
                 Radio Right
               </label>
@@ -145,7 +151,7 @@
             <div class="radio-wrapper">
               <label>
                 Radio Left
-                <input type="radio">
+                <input formControlName="radioExample" name="radioExample" type="radio" value="Radio Left">
                 <span></span>
               </label>
             </div>
@@ -153,17 +159,17 @@
           <div class="form-group">
             <div class="checkbox-wrapper checkbox-column">
               <label>
-                <input type="checkbox">
+                <input formControlName="checkboxColumnExample" type="checkbox" value="Checkbox 1 Column">
                 <span></span>
                 Checkbox 1
               </label>
               <label>
-                <input type="checkbox">
+                <input formControlName="checkboxColumnExample" type="checkbox" value="Checkbox 2 Column">
                 <span></span>
                 Checkbox 2
               </label>
               <label>
-                <input type="checkbox">
+                <input formControlName="checkboxColumnExample" type="checkbox" value="Checkbox 3 Column">
                 <span></span>
                 Checkbox 2
               </label>
@@ -172,17 +178,17 @@
           <div class="form-group">
             <div class="radio-wrapper radio-column">
               <label>
-                <input type="radio">
+                <input formControlName="radioColumnExample" name="radioColumnExample" type="radio" value="Radio 1 Column">
                 <span></span>
                 Radio 1
               </label>
               <label>
-                <input type="radio">
+                <input formControlName="radioColumnExample" name="radioColumnExample" type="radio" value="Radio 2 Column">
                 <span></span>
                 Radio 2
               </label>
               <label>
-                <input type="radio">
+                <input formControlName="radioColumnExample" name="radioColumnExample" type="radio" value="Radio 3 Column">
                 <span></span>
                 Radio 3
               </label>
@@ -191,17 +197,17 @@
           <div class="form-group">
             <div class="checkbox-wrapper checkbox-inline">
               <label>
-                <input type="checkbox">
+                <input formControlName="checkboxInlineExample" type="checkbox" value="Checkbox 1 Inline">
                 <span></span>
                 Checkbox 1
               </label>
               <label>
-                <input type="checkbox">
+                <input formControlName="checkboxInlineExample" type="checkbox" value="Checkbox 2 Inline">
                 <span></span>
                 Checkbox 2
               </label>
               <label>
-                <input type="checkbox">
+                <input formControlName="checkboxInlineExample" type="checkbox" value="Checkbox 3 Inline">
                 <span></span>
                 Checkbox 2
               </label>
@@ -210,17 +216,17 @@
           <div class="form-group">
             <div class="radio-wrapper radio-inline">
               <label>
-                <input type="radio">
+                <input formControlName="radioInlineExample" name="radioInlineExample" type="radio" value="Radio 1 Inline">
                 <span></span>
                 Radio 1
               </label>
               <label>
-                <input type="radio">
+                <input formControlName="radioInlineExample" name="radioInlineExample" type="radio" value="Radio 2 Inline">
                 <span></span>
                 Radio 2
               </label>
               <label>
-                <input type="radio">
+                <input formControlName="radioInlineExample" name="radioInlineExample" type="radio" value="Radio 3 Inline">
                 <span></span>
                 Radio 3
               </label>
@@ -229,22 +235,28 @@
           <div class="form-group">
             <div class="switch-wrapper">
               <label>
-                  <input type="checkbox">
-                  <span></span>
-                </label>
+                <input formControlName="switchExample" type="checkbox" value="Switch On">
+                <span></span>
+              </label>
             </div>
           </div>
           <div class="form-group">
             <div class="switch-wrapper">
               <label>
-                  <input type="checkbox">
-                  <span class="round"></span>
-                </label>
+                <input formControlName="switchRoundExample" type="checkbox" value="Switch Round On">
+                <span class="round"></span>
+              </label>
             </div>
           </div>
           <button type="submit" class="btn aoc-btn btn-blue" [disabled]="!exampleForm.valid">Submit</button>
           <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Reset</button>
         </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <pre>Form Values: {{ this.exampleForm.value | json }}</pre>
+        <pre>Form Status: {{ this.exampleForm.status }}</pre>
       </div>
     </div>
   </div>

@@ -287,6 +287,12 @@ input {
         color: red;
     }
 
+    span {
+        &.error-message {
+            color: red;
+        }
+    }
+
     &.error {
         border-color: red;
 

@@ -20,7 +20,7 @@ export class ContactsComponent implements OnInit {
   createContactForm() {
     this.contactForm = this.fb.group({
       firstName: ['', [Validators.required]],
-      lastName: ['', Validators.required]
+      lastName: ['', [Validators.required]]
     });
   }
 
