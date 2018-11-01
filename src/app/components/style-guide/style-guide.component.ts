@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { FormValidators } from '../../services/form-validators.service';
 
 @Component({
   selector: 'app-style-guide',
@@ -20,7 +21,7 @@ export class StyleGuideComponent implements OnInit {
 
   createExampleForm() {
     this.exampleForm = this.fb.group({
-      inputExample: new FormControl('', [Validators.required]),
+      inputExample: new FormControl('', [Validators.required, FormValidators.phoneNumber]),
       emailExample: new FormControl('', [Validators.required, Validators.email]),
       passwordExample: new FormControl('', [Validators.required, Validators.minLength(8)]),
       selectExample: new FormControl('', [Validators.required]),
