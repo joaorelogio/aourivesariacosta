@@ -49,3 +49,7 @@ p {
 .heading_bg_line {
   @extend %heading_bg_line;
 }
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -22,16 +22,16 @@
       overflow: hidden;
       margin-bottom: 20px;
       @include transition();
-      .block-image {
-        @extend %block-image
-      }
       .heading_bg,
       .heading_bg_line {
         margin-bottom: .25em;
       }
     }
     &__detail {
-      background-color: $grayLight;
+      &__title {
+        background-color: $grayLight;
+        padding: 15px 0;
+      }
     }
   }
 }

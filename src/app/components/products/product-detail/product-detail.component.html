@@ -1,21 +1,40 @@
-<section class="product__detail">
-  <div class="container-fluid">
+<section class="product__detail__title">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <button type="button" class="btn aoc-btn btn-blue btn-icon" (click)="backToList()"><i class="fa fa-angle-left"></i></button>
+      <div class="col-10">
+        <h1 class="inline">{{ product.collection }}</h1>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <pre>{{ product | json:4 }}</pre>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1>{{ product.collection }}</h1>
-        <h3>{{ product.product_text }}</h3>
-        <img src="{{ product.detail.picture }}">
+      <div class="col-2 d-flex justify-content-end align-items-center">
+        <button type="button" class="btn aoc-btn btn-blue m-0" (click)="backToList()">
+          Voltar
+          <i class="fa fa-list"></i>
+          <!-- <i class="fa fa-angle-left"></i> -->
+        </button>
       </div>
     </div>
   </div>
 </section>
+<section class="product__detail">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <div *ngFor="let img of productImages" class="block-image">
+          <img src="{{ img }}">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <h4>{{ product.product_text }}</h4>
+        <p color="grayDark">{{ product.detail.description }}</p>
+        <hr/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <pre>{{ product | json:4 }}</pre>
+    </div>
+  </div>
+</div>

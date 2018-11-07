@@ -9,6 +9,7 @@ import { ProductService } from '../../../services/product.service';
 export class ProductDetailComponent implements OnInit {
 
   product: any;
+  productImages: any[] = [];
 
   constructor(
     protected router: Router,
@@ -17,11 +18,11 @@ export class ProductDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     this.route.params.subscribe((data) => {
       this.productService.getProductDetail(data.id).subscribe(
         (res: any) => {
           this.product = res;
+          this.productImages = res.detail.picture;
         },
         (err: any) => {
           console.error(err);
