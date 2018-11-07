@@ -7,12 +7,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -28,12 +52,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -49,12 +97,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -70,12 +142,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -91,12 +187,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -112,12 +232,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -133,12 +277,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -154,12 +322,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -175,12 +367,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -196,12 +412,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -217,12 +457,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -238,12 +502,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -259,12 +547,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -280,12 +592,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -301,12 +637,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -322,12 +682,36 @@
     "isSlide": false,
     "detail": {
       "picture": [
-        "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
-        "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
       ],
       "particulars": "ouro",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

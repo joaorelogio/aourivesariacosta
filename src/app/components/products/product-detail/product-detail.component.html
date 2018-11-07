@@ -20,9 +20,7 @@
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <!-- INSTALL IMAGE GALLERY WITH THUMBNAIL -->
         <!-- https://www.npmjs.com/package/ngx-gallery -->
-        <div *ngFor="let img of productImages" class="block-image">
-          <img src="{{ img }}">
-        </div>
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <h4>{{ product.product_text }}</h4>

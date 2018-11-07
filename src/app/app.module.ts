@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgPipesModule } from 'ngx-pipes';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgxGalleryModule } from 'ngx-gallery';
+import 'hammerjs';
 // COMPONENTS
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,7 +49,8 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
     HttpClientModule,
     AppRoutingModule,
     NgPipesModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxGalleryModule
   ],
   providers: [
     ProductService,
