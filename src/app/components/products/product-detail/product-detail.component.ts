@@ -14,7 +14,7 @@ export class ProductDetailComponent implements OnInit {
   galleryImages: NgxGalleryImage[];
 
   product: any;
-  productImages: any[] = [];
+  productParts: any[] = [];
 
   constructor(
     protected router: Router,
@@ -23,8 +23,8 @@ export class ProductDetailComponent implements OnInit {
   ) {
     this.galleryOptions = [
       {
-        width: '600px',
-        height: '400px',
+        width: '100%',
+        height: '500px',
         thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Fade,
         imageSize: NgxGalleryImageSize.Cover,
@@ -37,14 +37,16 @@ export class ProductDetailComponent implements OnInit {
         thumbnailsArrowsAutoHide: true,
         preview: false
       },
+{
+        breakpoint: 1199,
+        height: '400px'
+      },
       {
         breakpoint: 992,
-        width: '100%',
         height: '300px'
       },
       {
         breakpoint: 767,
-        width: '100%',
         height: '200px',
         imageArrows: true,
         imageArrowsAutoHide: true,
