@@ -36,7 +36,7 @@ export class ProductListComponent implements OnInit {
 
   setPage(page: number) {
     this.pager = this.productService.getPagination(this.allProducts.length, page);
-    this.pagedProducts = this.pagedProducts.slice(this.pager.startIndex, this.pager.endIndex + 1);
+    this.pagedProducts = this.allProducts.slice(this.pager.startIndex, this.pager.endIndex + 1);
   }
 
   getCollections() {
