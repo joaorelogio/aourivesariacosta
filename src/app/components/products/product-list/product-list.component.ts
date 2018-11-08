@@ -10,6 +10,8 @@ export class ProductListComponent implements OnInit {
   title: string;
   subtitle: string;
   allProducts: any;
+  pager: any = {};
+  pagedProducts: any[];
   allCollections: any;
   filterActive: Boolean = false;
   applyFilter: string;
@@ -28,7 +30,13 @@ export class ProductListComponent implements OnInit {
   getProducts() {
     this.productService.getAllProducts().subscribe((data) => {
       this.allProducts = data;
+      this.setPage(1);
     });
+  }
+
+  setPage(page: number) {
+    this.pager = this.productService.getPagination(this.allProducts.length, page);
+    this.pagedProducts = this.pagedProducts.slice(this.pager.startIndex, this.pager.endIndex + 1);
   }
 
   getCollections() {
