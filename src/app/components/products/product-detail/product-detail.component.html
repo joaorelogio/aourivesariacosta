@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-10">
-        <h1 class="m-0">{{ product.collection }}</h1>
+        <h1 class="m-0">{{ product?.collection }}</h1>
       </div>
       <div class="col-2 d-flex justify-content-end align-items-center">
         <button type="button" class="btn aoc-btn btn-blue m-0" (click)="backToList()">
@@ -20,11 +20,11 @@
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <!-- INSTALL IMAGE GALLERY WITH THUMBNAIL -->
         <!-- https://www.npmjs.com/package/ngx-gallery -->
-        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+        <ngx-gallery *ngIf="galleryImages.length > 0" [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <h4>{{ product.product_text }}</h4>
-        <p color="grayDark">{{ product.detail.description }}</p>
+        <h4>{{ product?.product_text }}</h4>
+        <p color="grayDark">{{ product?.detail.description }}</p>
         <hr/>
       </div>
     </div>

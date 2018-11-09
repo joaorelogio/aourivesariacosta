@@ -11,7 +11,7 @@ export class ProductListComponent implements OnInit {
   subtitle: string;
   allProducts: any;
   pager: any = {};
-  pagedProducts: any[];
+  pagedProducts: any;
   allCollections: any;
   filterActive: Boolean = false;
   applyFilter: string;

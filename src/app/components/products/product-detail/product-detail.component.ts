@@ -37,7 +37,7 @@ export class ProductDetailComponent implements OnInit {
         thumbnailsArrowsAutoHide: true,
         preview: false
       },
-{
+      {
         breakpoint: 1199,
         height: '400px'
       },

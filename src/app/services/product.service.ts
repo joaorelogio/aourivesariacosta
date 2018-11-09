@@ -44,7 +44,7 @@ export class ProductService {
     });
   }
 
-  getPagination(totalItems: number, currentPage: number = 1, pageSize: number = 10) {
+  getPagination(totalItems: number, currentPage: number = 1, pageSize: number = 12) {
 
     const totalPages = Math.ceil(totalItems / pageSize);
 
