@@ -27,17 +27,16 @@
         <app-product-item [inputInfo]="prod"></app-product-item>
       </div>
     </div>
-    <div class="row" *ngIf="pager.pageSize <= pagedProducts.length">
+    <div class="row pagination" *ngIf="pager.pageSize <= pager.totalItems">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <nav aria-label="Page navigation example">
+        <nav>
           <ul class="pagination justify-content-center" *ngIf="pager.pages && pager.pages.length">
             <li class="page-item" [ngClass]="{disabled:pager.currentPage === 1}">
-              <a class="page-link" (click)="setPage(1)">First</a>
+              <a class="page-link" (click)="setPage(1)">Primeira</a>
             </li>
             <li class="page-item" [ngClass]="{disabled:pager.currentPage === 1}">
               <a class="page-link" (click)="setPage(pager.currentPage - 1)" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
+                <i class="fa fa-chevron-left"></i>
               </a>
             </li>
             <li class="page-item" *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
@@ -45,12 +44,11 @@
             </li>
             <li class="page-item" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
               <a class="page-link" (click)="setPage(pager.currentPage + 1)" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
+                  <i class="fa fa-chevron-right"></i>
               </a>
             </li>
             <li class="page-item" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
-              <a class="page-link" (click)="setPage(pager.totalPages)">Last</a>
+              <a class="page-link" (click)="setPage(pager.totalPages)">Última</a>
             </li>
           </ul>
         </nav>

@@ -1,0 +1,44 @@
+$bootstrap-color: #dee2e6;
+
+.pagination {
+  @extend %subtitle;
+
+  ul {
+    li {
+      &.page-item {
+        margin: 0;
+
+        &.active {
+          .page-link {
+            background-color: $blue;
+            border-color: $blue;
+            &:hover {
+              background-color: $blueDark;
+              border-color: $blueDark;
+              color: $white;
+            }
+          }
+        }
+        &.disabled {
+          .page-link {
+            color: $grayLight;
+          }
+        }
+        .page-link {
+          margin: 0;
+          border-right: 0;
+          &:hover {
+            background-color: $grayLight;
+            border-left-color: transparent;
+            border-right-color: transparent;
+          }
+        }
+      }
+      &:nth-last-child(1) {
+        .page-link {
+          border-right: 1px solid #dee2e6;
+        }
+      }
+    }
+  }
+}
