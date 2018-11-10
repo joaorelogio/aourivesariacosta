@@ -32,6 +32,25 @@
         background-color: $grayLight;
         padding: 15px 0;
       }
+
+      ul {
+        margin-bottom: .5rem;
+
+        li {
+          border-right-width: 1px;
+          border-right-style: solid;
+          border-right-color: $grayDark;
+          padding: 0 .5em;
+          
+          &:nth-child(1) {
+            padding-left: 0;
+          }
+
+          &:nth-last-child(1) {
+            border: 0;
+          }
+        }
+      }
     }
   }
 }
