@@ -40,10 +40,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -88,10 +93,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -136,10 +146,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -184,10 +199,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -232,10 +252,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -280,10 +305,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -328,10 +358,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -376,10 +411,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -424,10 +464,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -472,10 +517,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -520,10 +570,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -568,10 +623,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -616,10 +676,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -664,10 +729,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -712,10 +782,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   },
@@ -760,10 +835,15 @@
       ],
       "particulars": [
         "ouro",
-        "prata"
+        "prata",
+        "bronze"
       ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
       "amount": "29,99"
     }
   }
