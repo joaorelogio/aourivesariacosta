@@ -23,6 +23,15 @@ export class ProductService {
     });
   }
 
+  getProductsBy(collection: string) {
+    return new Observable(observer => {
+      this.http.get(this.jsonSrc).subscribe((data: any[]) => {
+        const result = data.filter(val => val.collection === collection);
+        observer.next(result);
+      });
+    });
+  }
+
   getAllCollections() {
     return new Observable(observer => {
       this.http.get(this.jsonSrc).subscribe((data: any[]) => {

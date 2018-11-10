@@ -23,15 +23,23 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
     this.title = 'Produtos';
     this.subtitle = 'Coleções';
-    this.getProducts();
+    this.refreshData();
     this.getCollections();
   }
 
-  getProducts() {
-    this.productService.getAllProducts().subscribe((data) => {
-      this.allProducts = data;
-      this.setPage(1);
-    });
+  refreshData(elm?) {
+    this.allProducts = [];
+    if (elm) {
+      this.productService.getProductsBy(elm).subscribe((data) => {
+        this.allProducts = data;
+        this.setPage(1);
+      });
+    } else {
+      this.productService.getAllProducts().subscribe((data) => {
+        this.allProducts = data;
+        this.setPage(1);
+      });
+    }
   }
 
   setPage(page: number) {
@@ -51,6 +59,9 @@ export class ProductListComponent implements OnInit {
     if (elm) {
       this.applyFilter = elm;
       this.subtitle = this.applyFilter;
+      this.refreshData(elm);
+    } else {
+      this.refreshData();
     }
   }
 

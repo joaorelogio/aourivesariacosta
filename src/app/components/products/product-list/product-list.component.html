@@ -10,7 +10,6 @@
     </div>
   </div>
 </section>
-
 <section class="product__list">
   <div class="container">
     <div class="row">
@@ -28,7 +27,7 @@
         <app-product-item [inputInfo]="prod"></app-product-item>
       </div>
     </div>
-    <div class="row">
+    <div class="row" *ngIf="pager.pageSize <= pagedProducts.length">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <nav aria-label="Page navigation example">
           <ul class="pagination justify-content-center" *ngIf="pager.pages && pager.pages.length">
