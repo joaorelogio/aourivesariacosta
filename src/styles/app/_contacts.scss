@@ -1,0 +1,6 @@
+.contacts {
+  h1,
+  h3 {
+    @extend %subtitle;
+  }
+}

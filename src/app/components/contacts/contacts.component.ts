@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { FormValidators } from '../../services/form-validators.service';
 
 @Component({
   selector: 'app-contacts',
@@ -7,6 +8,9 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 })
 export class ContactsComponent implements OnInit {
 
+  title: string;
+  subtitle: string;
+  subtitle2: string;
   contactForm: FormGroup;
 
   constructor(
@@ -14,13 +18,21 @@ export class ContactsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.title = 'Contactos';
+    this.subtitle = 'Loja';
+    this.subtitle2 = 'Pedido';
+
     this.createContactForm();
   }
 
   createContactForm() {
     this.contactForm = this.fb.group({
-      firstName: ['', [Validators.required]],
-      lastName: ['', [Validators.required]]
+      firstName: new FormControl('', [Validators.required]),
+      lastName: new FormControl('', [Validators.required]),
+      phone: new FormControl('', [Validators.required, FormValidators.phoneNumber]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      subject: new FormControl('', [Validators.required]),
+      description: new FormControl('', [Validators.required])
     });
   }
 
