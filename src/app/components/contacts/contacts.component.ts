@@ -29,7 +29,7 @@ export class ContactsComponent implements OnInit {
     this.contactForm = this.fb.group({
       firstName: new FormControl('', [Validators.required]),
       lastName: new FormControl('', [Validators.required]),
-      phone: new FormControl('', [Validators.required, FormValidators.phoneNumber]),
+      phone: new FormControl('', [Validators.required, FormValidators.allPhoneNumber]),
       email: new FormControl('', [Validators.required, Validators.email]),
       subject: new FormControl('', [Validators.required]),
       description: new FormControl('', [Validators.required])

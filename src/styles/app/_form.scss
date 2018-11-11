@@ -96,7 +96,6 @@ select {
 label {
     position: relative;
     color: $black;
-    font-weight: 400;
     margin: 0;
 
     input[type="checkbox"],
@@ -248,66 +247,18 @@ label {
     }
 }
 .form-group {
-    p {
-        color: $gray;
-    }
-
-    > label {
-        display: block;
-    }
-}
-
-// ERROR
-label {
-    input {
-        + small {
-            display: none;
-            color: red;
-        }
-
-        &.error {
-            border-color: red;
-
-            + span {
-                &:before {
-                    border-color: red !important;
-                }
-            }
-
-            + small {
-                display: block;
+    &.required {
+        > label {
+            &::after {
+                content: '*';
+                font-size: 75%;
+                position: absolute;
+                top: 0;
+                right: -10px;
             }
         }
     }
 }
-
-input {
-    + small {
-        display: none;
-        color: red;
-    }
-
-    span {
-        &.error-message {
-            color: red;
-        }
-    }
-
-    &.error {
-        border-color: red;
-
-        + span {
-            &:before {
-                border-color: red !important;
-            }
-        }
-
-        + small {
-            display: block !important;
-        }
-    }
-}
-
 .radio-btn-group {
     &.text-left {
         input {
@@ -324,7 +275,8 @@ input {
         }
     }
 }
-
 ::placeholder {
     color: $grayLight;
 }
+
+// ERROR

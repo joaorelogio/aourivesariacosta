@@ -16,34 +16,23 @@
           <h3 color="grayDark">{{ this.subtitle2 | uppercase }}</h3>
         </div>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-          <div class="form-group">
+          <div class="form-group required">
             <label for="firstName">Nome</label>
-            <input formControlName="firstName" type="text" id="firstName" placeholder="Insira o seu nome"
-              aria-describedby="firstNameHelp" required>
-            <small id="firstNameHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit.</small>
+            <input formControlName="firstName" type="text" id="firstName" placeholder="Insira o seu nome" required>
           </div>
-          <div class="form-group">
+          <div class="form-group required">
             <label for="lastName">Apelido</label>
-            <input formControlName="lastName" type="text" id="lastName" placeholder="Insira o seu apelido"
-              aria-describedby="lastNameHelp" required>
-            <small id="lastNameHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit.</small>
+            <input formControlName="lastName" type="text" id="lastName" placeholder="Insira o seu apelido" required>
           </div>
-          <div class="form-group">
+          <div class="form-group required">
             <label for="phone">Telefone</label>
-            <input formControlName="phone" type="text" id="phone" placeholder="Insira o nº de telefone ou telemóvel"
-              aria-describedby="phoneHelp" required>
-            <small id="phoneHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit.</small>
+            <input formControlName="phone" type="text" id="phone" placeholder="Insira o nº de telefone ou telemóvel" required>
           </div>
-          <div class="form-group">
+          <div class="form-group required">
             <label for="emailInput">Email</label>
-            <input formControlName="email" type="email" id="emailInput" aria-describedby="emailHelp" placeholder="Insira o seu email"
-              required>
-            <small id="emailHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+            <input formControlName="email" type="email" id="emailInput" aria-describedby="emailHelp" placeholder="Insira o seu email" required>
           </div>
-          <div class="form-group">
+          <div class="form-group required">
             <label for="subject">Assunto</label>
             <div class="select-wrapper">
               <label for="subject">
@@ -58,25 +47,45 @@
               </label>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group required">
             <label for="description">Mensagem</label>
-            <textarea formControlName="description" id="description" rows="3" placeholder="Deixe a sua mensagem o mais detalhado possivel"
-              required></textarea>
+            <textarea formControlName="description" id="description" rows="3" placeholder="Deixe a sua mensagem o mais detalhado possivel" required></textarea>
           </div>
           <!-- ERROR MESSAGES -->
           <!-- FIRST NAME -->
-          <div *ngIf="contactForm.controls['firstName'].touched && !contactForm.controls['firstName'].valid">
-            <span *ngIf="contactForm.controls['firstName'].hasError('required') ">
-              First name is required
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['firstName'].touched && contactForm.controls['firstName'].dirty && !contactForm.controls['firstName'].valid">
+            <span *ngIf="contactForm.controls['firstName'].hasError('required')">
+              Nome é um campo obrigatório
+            </span>
+          </div>
+          <!-- LAST NAME -->
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['lastName'].touched &&contactForm.controls['lastName'].dirty && !contactForm.controls['lastName'].valid">
+            <span *ngIf="contactForm.controls['lastName'].hasError('required')">
+              Apelido é um campo obrigatório
+            </span>
+          </div>
+          <!-- PHONE -->
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['phone'].touched && contactForm.controls['phone'].dirty && !contactForm.controls['phone'].valid">
+            <span *ngIf="contactForm.controls['phone'].hasError('required')">
+              Telefone é um campo obrigatório
+            </span>
+            <span *ngIf="contactForm.controls['phone'].hasError('invalidGeneralNumber')">
+              Número inválido
             </span>
           </div>
           <!-- EMAIL -->
-          <div *ngIf="contactForm.controls['email'].touched && !contactForm.controls['email'].valid">
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['email'].touched && contactForm.controls['email'].dirty && !contactForm.controls['email'].valid">
             <span *ngIf="contactForm.controls['email'].hasError('required') ">
-              Email ID is needed
+              Email é um campo obrigatório
             </span>
             <span *ngIf="contactForm.controls['email'].hasError('email') ">
-              Invalid Email ID
+              Email inválido
+            </span>
+          </div>
+          <!-- TEXTAREA -->
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['description'].touched && contactForm.controls['description'].dirty && !contactForm.controls['description'].valid">
+            <span *ngIf="contactForm.controls['description'].hasError('required') ">
+              Mensagem é um campo obrigatório
             </span>
           </div>
           <!-- END ERROR MESSAGES -->
@@ -85,12 +94,12 @@
             <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Limpar</button>
           </div>
         </form>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <pre>Form Values: {{ this.contactForm.value | json }}</pre>
             <pre>Form Status: {{ this.contactForm.status }}</pre>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

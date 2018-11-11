@@ -6,8 +6,8 @@ import { AbstractControl, Validators } from '@angular/forms';
 })
 export class FormValidators extends Validators {
 
-  static phoneNumber(control: AbstractControl) {
-    const re = /(^[+]{1}[0-9]{3}[2]{1}[0-9]{8}$)|(^[0]{2}[0-9]{3}[2]{1}[0-9]{8}$)|(^[2]{1}[0-9]{8}$)/;
+  static allPhoneNumber(control: AbstractControl) {
+    const re = /(^[+]{1}[0-9]{3}[0-9]{9}$)|(^[0]{2}[0-9]{3}[0-9]{9}$)|(^[0-9]{9}$)/;
     return re.test(control.value) || !control.value ? null : { invalidPhoneNumber: true };
   }
 
