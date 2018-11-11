@@ -23,7 +23,7 @@ export class ProductService {
     });
   }
 
-  getProductsBy(collection: string) {
+  getProductByCollection(collection: string) {
     return new Observable(observer => {
       this.http.get(this.jsonSrc).subscribe((data: any[]) => {
         const result = data.filter(val => val.collection === collection);

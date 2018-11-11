@@ -30,7 +30,7 @@ export class ProductListComponent implements OnInit {
   refreshData(elm?) {
     this.allProducts = [];
     if (elm) {
-      this.productService.getProductsBy(elm).subscribe((data) => {
+      this.productService.getProductByCollection(elm).subscribe((data) => {
         this.allProducts = data;
         this.setPage(1);
       });
