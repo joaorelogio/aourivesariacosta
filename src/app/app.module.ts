@@ -21,6 +21,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductItemComponent } from './components/products/product-item/product-item.component';
+import { CounterComponent } from './components/counter/counter.component';
 // SERVICES
 import { ProductService } from './services/product.service';
 import { FormValidators } from './services/form-validators.service';
@@ -41,7 +42,8 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
     CarouselComponent,
     QuoteComponent,
     FooterComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,8 @@ export class ProductDetailComponent implements OnInit {
   productParts: any;
   productSizes: any;
 
+  myCount: any;
+
   constructor(
     protected router: Router,
     protected route: ActivatedRoute,
@@ -74,6 +76,10 @@ export class ProductDetailComponent implements OnInit {
       console.error(err);
       this.backToList();
     });
+  }
+
+  countChange(event) {
+    this.myCount = event;
   }
 
   backToList() {

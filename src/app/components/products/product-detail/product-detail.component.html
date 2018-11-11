@@ -35,7 +35,9 @@
         <ul>
           <li class="inline" color="grayDark" *ngFor="let size of productSizes">{{ size }}</li>
         </ul>
+        {{ myCount }}
         <hr/>
+        <app-counter [prodVal]="product?.detail.amount" (change)="countChange($event)"></app-counter>
         <h4 color="blueDark" class="text-right">{{ product?.detail.amount }} €</h4>
       </div>
     </div>
