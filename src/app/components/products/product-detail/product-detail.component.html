@@ -8,7 +8,6 @@
         <button type="button" class="btn aoc-btn btn-blue m-0" (click)="backToList()">
           Voltar
           <i class="fa fa-list"></i>
-          <!-- <i class="fa fa-angle-left"></i> -->
         </button>
       </div>
     </div>
@@ -18,8 +17,6 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-        <!-- INSTALL IMAGE GALLERY WITH THUMBNAIL -->
-        <!-- https://www.npmjs.com/package/ngx-gallery -->
         <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -35,19 +32,13 @@
         <ul>
           <li class="inline" color="grayDark" *ngFor="let size of productSizes">{{ size }}</li>
         </ul>
-        {{ myCount }}
         <hr/>
-        <app-counter [prodVal]="product?.detail.amount" (change)="countChange($event)"></app-counter>
-        <h4 color="blueDark" class="text-right">{{ product?.detail.amount }} €</h4>
+        <app-counter class="inline w-75" [price]="product?.detail.amount" [stock]="product?.detail.stock" (change)="countChange($event)"></app-counter>
+        <div class="inline w-25">
+          <h4 color="blueDark" class="text-right m-0">{{ total }} €</h4>
+        </div>
+        <p color="gray" class="m-0"><sub>*Limitado ao stock de {{ product?.detail.stock }}</sub></p>
       </div>
     </div>
   </div>
 </section>
-
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <pre>{{ product | json:4 }}</pre>
-    </div>
-  </div>
-</div> -->

@@ -17,7 +17,9 @@ export class ProductDetailComponent implements OnInit {
   productParts: any;
   productSizes: any;
 
-  myCount: any;
+  count: number;
+  amount: number;
+  total: string;
 
   constructor(
     protected router: Router,
@@ -67,6 +69,8 @@ export class ProductDetailComponent implements OnInit {
           this.galleryImages = res.detail.picture;
           this.productParts = res.detail.particulars;
           this.productSizes = res.detail.sizes;
+          this.amount = res.detail.amount;
+          this.total = String(this.amount);
         },
         (err: any) => {
           console.error(err);
@@ -79,7 +83,9 @@ export class ProductDetailComponent implements OnInit {
   }
 
   countChange(event) {
-    this.myCount = event;
+    this.count = event;
+    const calc = String(this.count * this.amount);
+    this.total = parseFloat(calc).toFixed(2);
   }
 
   backToList() {
