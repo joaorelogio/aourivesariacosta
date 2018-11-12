@@ -32,10 +32,10 @@ export class ProductService {
     });
   }
 
-  getProductHighlighted() {
+  getProductByHighlighted() {
     return new Observable(observer => {
       this.http.get(this.jsonSrc).subscribe((data: any[]) => {
-        const result = data.filter(val => val.highlighted === true);
+        const result = data.filter(val => val.highlighted);
         observer.next(result);
       });
     });
