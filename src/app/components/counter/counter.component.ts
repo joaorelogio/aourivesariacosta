@@ -10,6 +10,7 @@ export class CounterComponent implements OnInit {
   start = 1;
   limit: number;
   count: number;
+
   @Input() set price(val) {
     this.amount = val;
   }
@@ -23,9 +24,6 @@ export class CounterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
-    console.log(this.limit);
-
     this.count = this.start;
     this.change.emit(this.count);
   }
