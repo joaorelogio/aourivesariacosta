@@ -200,7 +200,7 @@
               <label>
                 <input formControlName="checkbox3InlineExample" type="checkbox" value="Checkbox 3 Inline">
                 <span></span>
-                Checkbox 2
+                Checkbox 3
               </label>
             </div>
           </div>
@@ -240,9 +240,15 @@
             </div>
           </div>
           <!-- ERROR MESSAGES -->
-          <div class="form-group alert alert-danger text-center" *ngIf="exampleForm.get('emailExample').dirty && exampleForm.get('emailExample').errors && exampleForm.get('emailExample').errors.invalidPhoneNumber">
-            Email Inválido
+          <div class="form-group alert alert-danger text-center" *ngIf="exampleForm.controls['emailExample'].touched && exampleForm.controls['emailExample'].dirty && !exampleForm.controls['emailExample'].valid">
+            <span *ngIf="exampleForm.controls['emailExample'].hasError('required') ">
+              Email é um campo obrigatório
+            </span>
+            <span *ngIf="exampleForm.controls['emailExample'].hasError('email') ">
+              Email inválido
+            </span>
           </div>
+          <!-- END ERROR MESSAGES -->
           <div class="form-group">
             <button type="submit" class="btn aoc-btn btn-blue" [disabled]="!exampleForm.valid">Submit</button>
             <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Reset</button>
