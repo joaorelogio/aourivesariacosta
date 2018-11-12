@@ -32,6 +32,15 @@ export class ProductService {
     });
   }
 
+  getProductHighlighted() {
+    return new Observable(observer => {
+      this.http.get(this.jsonSrc).subscribe((data: any[]) => {
+        const result = data.filter(val => val.highlighted === true);
+        observer.next(result);
+      });
+    });
+  }
+
   getAllCollections() {
     return new Observable(observer => {
       this.http.get(this.jsonSrc).subscribe((data: any[]) => {

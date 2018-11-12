@@ -2,3 +2,12 @@
   <app-carousel></app-carousel>
   <app-quote text="{{ quoteTxt }}" author="{{ quoteAuthor }}"></app-quote>
 </section>
+<section class="home__highlight">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" *ngFor="let prod of allProducts">
+        <app-product-item [inputInfo]="prod"></app-product-item>
+      </div>
+    </div>
+  </div>
+</section>
