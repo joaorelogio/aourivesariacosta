@@ -60,7 +60,7 @@
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
     "isSlide": false,
-    "highlighted": false,
+    "highlighted": true,
     "detail": {
       "picture": [
         {
@@ -115,7 +115,7 @@
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
     "isSlide": false,
-    "highlighted": true,
+    "highlighted": false,
     "detail": {
       "picture": [
         {
@@ -280,7 +280,7 @@
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
     "isSlide": false,
-    "highlighted": false,
+    "highlighted": true,
     "detail": {
       "picture": [
         {
@@ -390,7 +390,7 @@
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
     "isSlide": false,
-    "highlighted": false,
+    "highlighted": true,
     "detail": {
       "picture": [
         {
