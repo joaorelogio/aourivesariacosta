@@ -12,6 +12,9 @@
     }
   }
   &__highlight {
-    padding-top: 10px;
+    padding-bottom: 20px;
+    h1 {
+      @extend %subtitle;
+    }
   }
 }
