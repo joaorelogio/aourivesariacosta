@@ -9,19 +9,29 @@ export class HomeComponent implements OnInit {
 
   quoteTxt: string;
   quoteAuthor: string;
-  allProducts: any;
+  randomProds: any;
 
   constructor(
     public productService: ProductService
-  ) { }
-
-  ngOnInit() {
+  ) {
     this.quoteTxt = 'O saber e a arte são portugueses. As matérias primas também. Na tradição da melhor ourivesaria nacional, criamos preciosidades que vencem o tempo e prolongam a memória. São pequenos tesouros da nossa identidade, joías retiradas da cultura e do imaginário de um povo. Venha conhecê-las. Afinal, Portugal vale ouro.';
     this.quoteAuthor = 'A Ourivesaria Costa - O valor de ser português.';
+  }
 
-    this.productService.getProductHighlighted().subscribe((data) => {
-      this.allProducts = data;
+  ngOnInit() {
+    this.productService.getProductByHighlighted().subscribe((data) => {
+      this.getRandomHighlighted(data);
     });
+  }
+
+  getRandomHighlighted(allProds) {
+    this.randomProds = [];
+    for (let i = 0; i < 3; i++) {
+      const idx = Math.floor(Math.random() * allProds.length);
+      this.randomProds.push(allProds[idx]);
+      allProds.splice(idx, 1);
+    }
+    return this.randomProds;
   }
 
 }
