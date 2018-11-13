@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   quoteAuthor: string;
   randomProds: any;
   highTitle: string;
+  path: string;
 
   constructor(
     public productService: ProductService
@@ -20,6 +21,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.path = 'home';
     this.highTitle = 'Novos Produtos';
     this.productService.getProductByHighlighted().subscribe((data) => {
       this.getRandomHighlighted(data);

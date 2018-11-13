@@ -15,12 +15,14 @@ export class ProductListComponent implements OnInit {
   allCollections: any;
   filterActive: Boolean = false;
   applyFilter: string;
+  path: string;
 
   constructor(
     public productService: ProductService
   ) { }
 
   ngOnInit() {
+    this.path = 'products';
     this.title = 'Produtos';
     this.subtitle = 'Coleções';
     this.refreshData();

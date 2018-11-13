@@ -7,8 +7,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductItemComponent implements OnInit {
   info: any = {};
+  from: string;
   @Input() set inputInfo(val) {
     this.info = val;
+  }
+  @Input() set path(val) {
+    this.from = val;
   }
 
   constructor(
@@ -20,7 +24,7 @@ export class ProductItemComponent implements OnInit {
   }
 
   openProductDetail(id: string) {
-    this.router.navigate(['/products/product-detail', id], { relativeTo: this.route });
+    this.router.navigate(['/products/product-detail', id], { queryParams: { path: this.from } });
   }
 
 }

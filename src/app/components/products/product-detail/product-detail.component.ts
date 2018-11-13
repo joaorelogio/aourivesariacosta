@@ -78,7 +78,7 @@ export class ProductDetailComponent implements OnInit {
       );
     }, (err) => {
       console.error(err);
-      this.backToList();
+      this.goBackTo();
     });
   }
 
@@ -88,7 +88,14 @@ export class ProductDetailComponent implements OnInit {
     this.total = parseFloat(calc).toFixed(2);
   }
 
-  backToList() {
-    this.router.navigate(['products']);
+  goBackTo() {
+    this.route.queryParams.subscribe(params => {
+      const val = params['path'];
+      if (val === 'home') {
+        this.router.navigate(['home']);
+      } else if (val === 'products') {
+        this.router.navigate(['products']);
+      }
+    });
   }
 }
