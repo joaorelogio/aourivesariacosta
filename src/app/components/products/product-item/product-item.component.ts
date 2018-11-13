@@ -20,7 +20,7 @@ export class ProductItemComponent implements OnInit {
   }
 
   openProductDetail(id: string) {
-    this.router.navigate(['product-detail', id], { relativeTo: this.route });
+    this.router.navigate(['/products/product-detail', id], { relativeTo: this.route });
   }
 
 }
