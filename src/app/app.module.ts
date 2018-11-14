@@ -24,7 +24,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductItemComponent } from './components/products/product-item/product-item.component';
 import { CounterComponent } from './components/counter/counter.component';
 // SERVICES
-import { LoadingService } from './services/loading.service';
 import { ProductService } from './services/product.service';
 import { FormValidators } from './services/form-validators.service';
 // TODO: DELETE COMPONENT IN THE END
@@ -59,8 +58,7 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
   ],
   providers: [
     ProductService,
-    FormValidators,
-    LoadingService
+    FormValidators
   ],
   bootstrap: [
     AppComponent
