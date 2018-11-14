@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgPipesModule } from 'ngx-pipes';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxLoadingModule } from 'ngx-loading';
 import 'hammerjs';
 // COMPONENTS
 import { AppRoutingModule } from './app-routing.module';
@@ -23,11 +24,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductItemComponent } from './components/products/product-item/product-item.component';
 import { CounterComponent } from './components/counter/counter.component';
 // SERVICES
+import { LoadingService } from './services/loading.service';
 import { ProductService } from './services/product.service';
 import { FormValidators } from './services/form-validators.service';
 // TODO: DELETE COMPONENT IN THE END
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
-import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -44,8 +45,7 @@ import { LoadingComponent } from './components/loading/loading.component';
     QuoteComponent,
     FooterComponent,
     ProductItemComponent,
-    CounterComponent,
-    LoadingComponent
+    CounterComponent
   ],
   imports: [
     BrowserModule,
@@ -54,11 +54,13 @@ import { LoadingComponent } from './components/loading/loading.component';
     AppRoutingModule,
     NgPipesModule,
     ReactiveFormsModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    NgxLoadingModule.forRoot({})
   ],
   providers: [
     ProductService,
-    FormValidators
+    FormValidators,
+    LoadingService
   ],
   bootstrap: [
     AppComponent
