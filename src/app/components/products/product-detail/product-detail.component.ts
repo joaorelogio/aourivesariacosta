@@ -40,7 +40,11 @@ export class ProductDetailComponent implements OnInit {
         arrowNextIcon: 'fa fa-chevron-right',
         thumbnailsOrder: NgxGalleryOrder.Row,
         thumbnailsArrowsAutoHide: true,
-        preview: false
+        preview: false,
+        // AUTO PLAY
+        imageAutoPlay: true,
+        imageAutoPlayPauseOnHover: true,
+        previewAutoPlay: true
       },
       {
         breakpoint: 1199,
