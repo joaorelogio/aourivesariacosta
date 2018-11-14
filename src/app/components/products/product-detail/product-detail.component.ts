@@ -90,12 +90,7 @@ export class ProductDetailComponent implements OnInit {
 
   goBackTo() {
     this.route.queryParams.subscribe(params => {
-      const val = params['path'];
-      if (val === 'home') {
-        this.router.navigate(['home']);
-      } else if (val === 'products') {
-        this.router.navigate(['products']);
-      }
+      this.router.navigate([params['path']]);
     });
   }
 }
