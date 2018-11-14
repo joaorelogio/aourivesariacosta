@@ -17,7 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+        <ngx-gallery *ngIf="product" [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <h4>{{ product?.product_text }}</h4>
