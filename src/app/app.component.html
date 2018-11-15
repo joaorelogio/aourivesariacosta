@@ -1,5 +1,10 @@
 <div class="container-body">
   <app-header></app-header>
   <router-outlet></router-outlet>
+  
+  <ng-template #customLoadingTemplate>
+    <app-loading></app-loading>
+  </ng-template>
+  <ngx-loading #ngxLoading [show]="loading" [config]="{backdropBackgroundColour: '#5B8F94', fullScreenBackdrop: true}" [template]="customLoadingTemplate"></ngx-loading>
 </div>
 <app-footer></app-footer>
