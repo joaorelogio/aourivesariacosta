@@ -1,7 +1,7 @@
 // ANGULAR & BOOTSTRAP & LIBS
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgPipesModule } from 'ngx-pipes';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -23,12 +23,14 @@ import { QuoteComponent } from './components/quote/quote.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductItemComponent } from './components/products/product-item/product-item.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { LoadingComponent } from './components/loading/loading.component';
 // SERVICES
 import { ProductService } from './services/product.service';
 import { FormValidators } from './services/form-validators.service';
+import { InterceptorService } from './services/interceptor.service';
+import { LoadingService } from './services/loading.service';
 // TODO: DELETE COMPONENT IN THE END
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
-import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,14 @@ import { LoadingComponent } from './components/loading/loading.component';
   ],
   providers: [
     ProductService,
-    FormValidators
+    FormValidators,
+    LoadingService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptorService,
+      multi: true,
+      deps: [LoadingService]
+    }
   ],
   bootstrap: [
     AppComponent
