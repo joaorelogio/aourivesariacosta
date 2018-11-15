@@ -28,6 +28,7 @@ import { ProductService } from './services/product.service';
 import { FormValidators } from './services/form-validators.service';
 // TODO: DELETE COMPONENT IN THE END
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
     QuoteComponent,
     FooterComponent,
     ProductItemComponent,
-    CounterComponent
+    CounterComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
