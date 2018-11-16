@@ -1,11 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/finally';
+import { finalize, tap } from 'rxjs/operators';
 import { LoadingService } from './loading.service';
-// import { do } from 'rxjs/operators';
-// https://alligator.io/angular/httpclient-interceptors/
 
 @Injectable()
 export class InterceptorService implements HttpInterceptor {
@@ -15,18 +12,20 @@ export class InterceptorService implements HttpInterceptor {
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     this.loadingService.onStarted(req);
-    return next.handle(req).do(
-      evt => {
-      if (evt instanceof HttpResponse) {
-        console.log('---> status:', evt.status);
-        console.log('---> filter:', req.params.get('filter'));
-      }
-    },
-    (err: any) => {
-      console.log(err);
-    })
-    .finally(() => {
+
+    return next.handle(req).pipe(
+      tap(
+        event => {
+          status = '';
+          if (event instanceof HttpResponse) {
+            console.log('---> status:', event.status);
+          }
+        },
+        error => status = 'failed'
+      ),
+      finalize(() => {
         this.loadingService.onFinished(req);
-    });
+      })
+    );
   }
 }

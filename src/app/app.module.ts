@@ -67,8 +67,7 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
     {
       provide: HTTP_INTERCEPTORS,
       useClass: InterceptorService,
-      multi: true,
-      deps: [LoadingService]
+      multi: true
     }
   ],
   bootstrap: [

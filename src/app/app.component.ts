@@ -20,10 +20,5 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.Login();
-  }
-
-  Login() {
-    this.loading = true;
   }
 }
