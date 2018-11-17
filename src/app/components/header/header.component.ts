@@ -1,41 +1,28 @@
-// import { Component, OnInit } from '@angular/core';
-
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription, Observable } from 'rxjs';
-import { timer } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
 })
-export class HeaderComponent implements OnInit, OnDestroy  {
 
-  showloader: Boolean = false;
-  subscription: Subscription;
-  timer: Observable<any>;
-  imgSrc: string;
+export class HeaderComponent implements OnInit  {
 
   constructor() { }
 
   ngOnInit() {
-    this.setTimer();
+    this.initHoverLogo();
   }
 
-  ngOnDestroy() {
-    if ( this.subscription && this.subscription instanceof Subscription) {
-      this.subscription.unsubscribe();
+  initHoverLogo() {
+    let idx = 0;
+    fade();
+    function fade() {
+        if (idx >= $('#logotipo img').length) {
+          idx = 0;
+        }
+        $('#logotipo img').eq(idx).fadeIn(1500).delay(3000).fadeOut(1500, fade);
+        idx++;
     }
-  }
-
-  public setTimer() {
-    this.imgSrc = 'assets/logo/logo-fill-text.png';
-    const numbers = timer(5000, 5000);
-    numbers.subscribe(x => {
-      console.log(x);
-      if ( x === 5 ) {
-        this.imgSrc = 'assets/logo/logo-fill-text.png';
-        this.setTimer();
-      }
-    });
   }
 }
