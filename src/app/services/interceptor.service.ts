@@ -18,7 +18,7 @@ export class InterceptorService implements HttpInterceptor {
         event => {
           status = '';
           if (event instanceof HttpResponse) {
-            console.log('---> status:', event.status);
+            // console.log('---> status:', event.status);
           }
         },
         error => status = 'failed'
