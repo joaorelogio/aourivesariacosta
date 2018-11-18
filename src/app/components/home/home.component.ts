@@ -7,9 +7,14 @@ import { ProductService } from '../../services/product.service';
 })
 export class HomeComponent implements OnInit {
 
+  // today: string;
+
   quoteTxt: string;
   quoteAuthor: string;
-  randomProds: any;
+
+  newestTitle: string;
+
+  randomHighlProds: any;
   highTitle: string;
   path: string;
 
@@ -21,21 +26,50 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    // this.today = this.getDate();
+
     this.path = 'home';
-    this.highTitle = 'Novos Produtos';
+    this.newestTitle = 'Novos Produtos';
+    this.highTitle = 'Produtos em destaque';
     this.productService.getProductByHighlighted().subscribe((data) => {
       this.getRandomHighlighted(data);
     });
+    this.productService.getAllProducts().subscribe((data) => {
+      this.orderByDate(data);
+    });
   }
 
+  // getDate() {
+  //   const date = new Date(),
+  //         year = date.getFullYear(),
+  //         month = (date.getMonth() + 1).toString(),
+  //         formatedMonth = (month.length === 1) ? ('0' + month) : month,
+  //         day = date.getDate().toString(),
+  //         formatedDay = (day.length === 1) ? ('0' + day) : day,
+  //         hour = date.getHours().toString(),
+  //         formatedHour = (hour.length === 1) ? ('0' + hour) : hour,
+  //         minute = date.getMinutes().toString(),
+  //         formatedMinute = (minute.length === 1) ? ('0' + minute) : minute,
+  //         second = date.getSeconds().toString(),
+  //         formatedSecond = (second.length === 1) ? ('0' + second) : second;
+  //   return formatedDay + '-' + formatedMonth + '-' + year + ' ' + formatedHour + ':' + formatedMinute + ':' + formatedSecond;
+  // }
+
   getRandomHighlighted(allProds) {
-    this.randomProds = [];
+    this.randomHighlProds = [];
     for (let i = 0; i < 3; i++) {
       const idx = Math.floor(Math.random() * allProds.length);
-      this.randomProds.push(allProds[idx]);
+      this.randomHighlProds.push(allProds[idx]);
       allProds.splice(idx, 1);
     }
-    return this.randomProds;
+    return this.randomHighlProds;
+  }
+
+  orderByDate(allProds) {
+    allProds.sort((val) => {
+      console.log(val.create_date);
+      return val.create_date;
+    });
   }
 
 }

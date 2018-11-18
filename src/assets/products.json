@@ -4,7 +4,6 @@
     "collection": "Alianças",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": true,
     "detail": {
       "picture": [
@@ -52,14 +51,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "18-11-2018 00:10:36"
   },
   {
     "id": "0002",
     "collection": "Aneis Noivado",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": true,
     "detail": {
       "picture": [
@@ -107,14 +106,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "18-11-2018 00:10:36"
   },
   {
     "id": "0003",
     "collection": "Filigrana",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -162,14 +161,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "18-11-2018 00:10:36"
   },
   {
     "id": "0004",
     "collection": "Marcassites",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -217,14 +216,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "18-11-2018 00:10:36"
   },
   {
     "id": "0005",
     "collection": "Zirconias",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": true,
     "detail": {
       "picture": [
@@ -272,14 +271,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "18-11-2018 00:10:36"
   },
   {
     "id": "0006",
     "collection": "Porcelanas",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": true,
     "detail": {
       "picture": [
@@ -327,14 +326,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0007",
     "collection": "Santos de Portugal",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -382,14 +381,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0008",
     "collection": "Santos de Portugal",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": true,
     "detail": {
       "picture": [
@@ -437,14 +436,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0009",
     "collection": "Alianças",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -492,14 +491,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0010",
     "collection": "Aneis Noivado",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -547,14 +546,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0011",
     "collection": "Filigrana",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -602,14 +601,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0012",
     "collection": "Marcassites",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -657,14 +656,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0013",
     "collection": "Zirconias",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -712,14 +711,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0014",
     "collection": "Porcelanas",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -767,14 +766,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0015",
     "collection": "Santos de Portugal",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -822,14 +821,14 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0015",
     "collection": "Santos de Portugal",
     "product_text": "Lorem ipsum",
     "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
-    "isSlide": false,
     "highlighted": false,
     "detail": {
       "picture": [
@@ -877,6 +876,7 @@
       ],
       "amount": 29.99,
       "stock": 20
-    }
+    },
+    "create_date": "17-11-2018 00:10:36"
   }
 ]
