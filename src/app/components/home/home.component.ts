@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   quoteAuthor: string;
 
   newestTitle: string;
+  newestProds: any;
 
   randomHighlProds: any;
   highTitle: string;
@@ -35,6 +36,7 @@ export class HomeComponent implements OnInit {
       this.getRandomHighlighted(data);
     });
     this.productService.getAllProducts().subscribe((data) => {
+      // console.log(data);
       this.orderByDate(data);
     });
   }
@@ -57,7 +59,7 @@ export class HomeComponent implements OnInit {
 
   getRandomHighlighted(allProds) {
     this.randomHighlProds = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
       const idx = Math.floor(Math.random() * allProds.length);
       this.randomHighlProds.push(allProds[idx]);
       allProds.splice(idx, 1);
@@ -66,10 +68,18 @@ export class HomeComponent implements OnInit {
   }
 
   orderByDate(allProds) {
-    allProds.sort((val) => {
-      console.log(val.create_date);
-      return val.create_date;
+    const sorrtedArray: string[] = allProds.sort((n1, n2) => {
+      if (n1.create_date > n2.create_date) {
+        return 1;
+      }
+      if (n1.create_date < n2.create_date) {
+        return -1;
+      }
+      return 0;
     });
+    this.newestProds = sorrtedArray.slice(Math.max(sorrtedArray.length - 3, 1));
+    return this.newestProds;
   }
+
 
 }
