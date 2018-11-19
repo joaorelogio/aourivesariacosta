@@ -8,6 +8,18 @@
       @include media-smaller-than(768px) {
         text-align: center;
       }
+
+      button {
+        &.active {
+          background-color: $blue !important;
+		      border-color: $blue !important;
+          color: $white !important;
+          &:hover {
+            background-color: darken( $blue, 25% ) !important;
+            border-color: darken( $blue, 25% ) !important;
+          }
+        }
+      }
     }
     &__list {
       h1,

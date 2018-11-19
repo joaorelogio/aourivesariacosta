@@ -17,6 +17,8 @@ export class ProductListComponent implements OnInit {
   applyFilter: string;
   path: string;
 
+  selectedIndex: number = null;
+
   constructor(
     public productService: ProductService
   ) { }
@@ -55,7 +57,8 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  filter(elm) {
+  filter(elm, index) {
+    this.selectedIndex = index;
     this.subtitle = 'Coleções';
     this.applyFilter = '';
     if (elm) {
@@ -63,6 +66,7 @@ export class ProductListComponent implements OnInit {
       this.subtitle = this.applyFilter;
       this.refreshData(elm);
     } else {
+      this.selectedIndex = null;
       this.refreshData();
     }
   }

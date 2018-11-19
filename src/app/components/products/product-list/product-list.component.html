@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <button type="button" class="btn aoc-btn btn-blue btn-line" (click)="filter()">All</button>
-        <button *ngFor="let collection of allCollections" type="button" class="btn aoc-btn btn-blue btn-line" (click)="filter(collection)">
+        <button type="button" class="btn aoc-btn btn-blue btn-line" [class.active]="selectedIndex === null" (click)="filter()">All</button>
+        <button *ngFor="let collection of allCollections; let i = index;" type="button" class="btn aoc-btn btn-blue btn-line" [class.active]="selectedIndex === i"  (click)="filter(collection, i)">
           {{ collection }}
         </button>
       </div>
