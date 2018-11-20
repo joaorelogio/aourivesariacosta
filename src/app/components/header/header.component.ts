@@ -25,4 +25,10 @@ export class HeaderComponent implements OnInit  {
         idx++;
     }
   }
+
+  toogleCollapse() {
+    $('.navbar-toggler').addClass('collapsed').attr('aria-expanded', 'false');
+    $('#navbarNav').removeClass('show');
+  }
+
 }
