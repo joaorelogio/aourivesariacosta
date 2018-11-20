@@ -1,0 +1,15 @@
+.carousel {
+  .carousel-inner {
+    height: 500px;
+    .carousel-item {
+      height: 100%;
+      img {
+        height: 100%;
+        @extend %center-horz
+      }
+    }
+    @include media-smaller-than(992px) {
+      height: 300px;
+    }
+  }
+}
