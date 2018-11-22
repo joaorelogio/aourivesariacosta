@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { FormValidators } from '../../services/form-validators.service';
+import { MapService } from '../../services/map.service';
 
 @Component({
   selector: 'app-contacts',
@@ -13,8 +14,13 @@ export class ContactsComponent implements OnInit {
   subtitle2: string;
   contactForm: FormGroup;
 
+  lat: string;
+  lng: string;
+  location: Object;
+
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private mapService: MapService
   ) { }
 
   ngOnInit() {
@@ -23,6 +29,7 @@ export class ContactsComponent implements OnInit {
     this.subtitle2 = 'Pedido';
 
     this.createContactForm();
+    this.createMap();
   }
 
   createContactForm() {
@@ -43,6 +50,15 @@ export class ContactsComponent implements OnInit {
   onReset() {
     this.contactForm.reset();
     this.createContactForm();
+  }
+
+  createMap() {
+    this.mapService.getLocation().subscribe(data => {
+      console.log(data);
+      // this.lat = data.latitude;
+      // this.lng = data.longitude;
+    });
+
   }
 
 }
