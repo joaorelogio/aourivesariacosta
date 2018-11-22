@@ -1,0 +1,20 @@
+{
+  "ip": "95.93.208.145",
+  "city": "Lisbon",
+  "region": "Lisbon",
+  "region_code": "PT",
+  "country": "Portugal",
+  "country_name": "Portugal",
+  "continent_code": "UE",
+  "in_eu": true,
+  "postal": "1150-079",
+  "latitude": 38.716700,
+  "longitude": -9.133300,
+  "timezone": "Europe/Lisbon",
+  "utc_offset": "-0800",
+  "country_calling_code": "+351",
+  "currency": "EUR",
+  "languages": "pt-PT,mwl",
+  "asn": "AS2860",
+  "org": "Nos Comunicacoes, S.A."
+}
