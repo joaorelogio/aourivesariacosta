@@ -7,6 +7,7 @@ import { NgPipesModule } from 'ngx-pipes';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { NgxLoadingModule } from 'ngx-loading';
+import { AgmCoreModule } from '@agm/core';
 import 'hammerjs';
 // COMPONENTS
 import { AppRoutingModule } from './app-routing.module';
@@ -58,7 +59,10 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
     NgPipesModule,
     ReactiveFormsModule,
     NgxGalleryModule,
-    NgxLoadingModule.forRoot({})
+    NgxLoadingModule.forRoot({}),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyASN4QdBZkpyhd64sV3KfAYrVZckLR7gn4'
+    })
   ],
   providers: [
     ProductService,
