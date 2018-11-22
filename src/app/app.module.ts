@@ -30,6 +30,7 @@ import { ProductService } from './services/product.service';
 import { FormValidators } from './services/form-validators.service';
 import { InterceptorService } from './services/interceptor.service';
 import { LoadingService } from './services/loading.service';
+import { MapService } from './services/map.service';
 // TODO: DELETE COMPONENT IN THE END
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
 
@@ -68,6 +69,7 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
     ProductService,
     FormValidators,
     LoadingService,
+    MapService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: InterceptorService,
