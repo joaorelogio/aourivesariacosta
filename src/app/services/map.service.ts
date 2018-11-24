@@ -1,6 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+interface Location {
+  latitude: string;
+  longitude: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,7 +18,7 @@ export class MapService {
   ) { }
 
   getLocation() {
-    return this.http.get(this.jsonSrc);
+    return this.http.get<Location>(this.jsonSrc);
   }
 
 }

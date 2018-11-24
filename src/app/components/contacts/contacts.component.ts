@@ -16,7 +16,8 @@ export class ContactsComponent implements OnInit {
 
   lat: string;
   lng: string;
-  location: Object;
+
+  Location: Object;
 
   constructor(
     private fb: FormBuilder,
@@ -55,8 +56,8 @@ export class ContactsComponent implements OnInit {
   createMap() {
     this.mapService.getLocation().subscribe(data => {
       console.log(data);
-      // this.lat = data.latitude;
-      // this.lng = data.longitude;
+      this.lat = data.latitude;
+      this.lng = data.longitude;
     });
 
   }

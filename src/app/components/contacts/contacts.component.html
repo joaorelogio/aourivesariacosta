@@ -7,122 +7,101 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="heading_bg">
-              <h3 color="grayDark">{{ this.subtitle | uppercase }}</h3>
-            </div>
-          </div>
+        <div class="heading_bg">
+          <h3 color="grayDark">{{ this.subtitle | uppercase }}</h3>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1555.724453460347!2d-9.142967207240101!3d38.75340669856839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933ab21925f77%3A0x2b52cfb89dac08e3!2sL%C3%BAcio+%26+Costa+Lda!5e0!3m2!1spt-PT!2spt!4v1542929730890" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <agm-map [latitude]="lat" [longitude]="lng">
-              <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-            </agm-map>
-          </div>
-        </div>
+        <agm-map [mapDraggable]="false" [zoomControl]="false" [zoom]="18" [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="heading_bg">
-              <h3 color="grayDark">{{ this.subtitle2 | uppercase }}</h3>
+        <div class="heading_bg">
+          <h3 color="grayDark">{{ this.subtitle2 | uppercase }}</h3>
+        </div>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group required">
+            <label for="firstName">Nome</label>
+            <input formControlName="firstName" type="text" id="firstName" placeholder="Insira o seu nome" required>
+          </div>
+          <div class="form-group required">
+            <label for="lastName">Apelido</label>
+            <input formControlName="lastName" type="text" id="lastName" placeholder="Insira o seu apelido" required>
+          </div>
+          <div class="form-group required">
+            <label for="phone">Telefone</label>
+            <input formControlName="phone" type="text" id="phone" placeholder="Insira o nº de telefone ou telemóvel"
+              required>
+          </div>
+          <div class="form-group required">
+            <label for="emailInput">Email</label>
+            <input formControlName="email" type="email" id="emailInput" aria-describedby="emailHelp" placeholder="Insira o seu email"
+              required>
+          </div>
+          <div class="form-group required">
+            <label for="subject">Assunto</label>
+            <div class="select-wrapper">
+              <label for="subject">
+                <select id="subject" formControlName="subject">
+                  <option value="" class="placeholder" disabled>Selecione</option>
+                  <option value="Option 1">Assunto 1</option>
+                  <option value="Option 2">Assunto 2</option>
+                  <option value="Option 3">Assunto 3</option>
+                  <option value="Option 4">Assunto 4</option>
+                  <option value="Option 5">Assunto 5</option>
+                </select>
+              </label>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-              <div class="form-group required">
-                <label for="firstName">Nome</label>
-                <input formControlName="firstName" type="text" id="firstName" placeholder="Insira o seu nome" required>
-              </div>
-              <div class="form-group required">
-                <label for="lastName">Apelido</label>
-                <input formControlName="lastName" type="text" id="lastName" placeholder="Insira o seu apelido" required>
-              </div>
-              <div class="form-group required">
-                <label for="phone">Telefone</label>
-                <input formControlName="phone" type="text" id="phone" placeholder="Insira o nº de telefone ou telemóvel"
-                  required>
-              </div>
-              <div class="form-group required">
-                <label for="emailInput">Email</label>
-                <input formControlName="email" type="email" id="emailInput" aria-describedby="emailHelp" placeholder="Insira o seu email"
-                  required>
-              </div>
-              <div class="form-group required">
-                <label for="subject">Assunto</label>
-                <div class="select-wrapper">
-                  <label for="subject">
-                    <select id="subject" formControlName="subject">
-                      <option value="" class="placeholder" disabled>Selecione</option>
-                      <option value="Option 1">Assunto 1</option>
-                      <option value="Option 2">Assunto 2</option>
-                      <option value="Option 3">Assunto 3</option>
-                      <option value="Option 4">Assunto 4</option>
-                      <option value="Option 5">Assunto 5</option>
-                    </select>
-                  </label>
-                </div>
-              </div>
-              <div class="form-group required">
-                <label for="description">Mensagem</label>
-                <textarea formControlName="description" id="description" rows="3" placeholder="Deixe a sua mensagem o mais detalhado possivel"
-                  required></textarea>
-              </div>
-              <!-- ERROR MESSAGES -->
-              <!-- FIRST NAME -->
-              <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['firstName'].touched && contactForm.controls['firstName'].dirty && !contactForm.controls['firstName'].valid">
-                <span *ngIf="contactForm.controls['firstName'].hasError('required')">
-                  Nome é um campo obrigatório
-                </span>
-              </div>
-              <!-- LAST NAME -->
-              <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['lastName'].touched &&contactForm.controls['lastName'].dirty && !contactForm.controls['lastName'].valid">
-                <span *ngIf="contactForm.controls['lastName'].hasError('required')">
-                  Apelido é um campo obrigatório
-                </span>
-              </div>
-              <!-- PHONE -->
-              <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['phone'].touched && contactForm.controls['phone'].dirty && !contactForm.controls['phone'].valid">
-                <span *ngIf="contactForm.controls['phone'].hasError('required')">
-                  Telefone é um campo obrigatório
-                </span>
-                <span *ngIf="contactForm.controls['phone'].hasError('invalidGeneralNumber')">
-                  Número inválido
-                </span>
-              </div>
-              <!-- EMAIL -->
-              <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['email'].touched && contactForm.controls['email'].dirty && !contactForm.controls['email'].valid">
-                <span *ngIf="contactForm.controls['email'].hasError('required') ">
-                  Email é um campo obrigatório
-                </span>
-                <span *ngIf="contactForm.controls['email'].hasError('email') ">
-                  Email inválido
-                </span>
-              </div>
-              <!-- TEXTAREA -->
-              <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['description'].touched && contactForm.controls['description'].dirty && !contactForm.controls['description'].valid">
-                <span *ngIf="contactForm.controls['description'].hasError('required') ">
-                  Mensagem é um campo obrigatório
-                </span>
-              </div>
-              <!-- END ERROR MESSAGES -->
-              <div class="form-group">
-                <button type="submit" class="btn aoc-btn btn-blue ml-0" [disabled]="!contactForm.valid">Submeter</button>
-                <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Limpar</button>
-              </div>
-            </form>
+          <div class="form-group required">
+            <label for="description">Mensagem</label>
+            <textarea formControlName="description" id="description" rows="3" placeholder="Deixe a sua mensagem o mais detalhado possivel"
+              required></textarea>
           </div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <pre>Form Values: {{ this.contactForm.value | json }}</pre>
-            <pre>Form Status: {{ this.contactForm.status }}</pre>
+          <!-- ERROR MESSAGES -->
+          <!-- FIRST NAME -->
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['firstName'].touched && contactForm.controls['firstName'].dirty && !contactForm.controls['firstName'].valid">
+            <span *ngIf="contactForm.controls['firstName'].hasError('required')">
+              Nome é um campo obrigatório
+            </span>
           </div>
-        </div> -->
+          <!-- LAST NAME -->
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['lastName'].touched &&contactForm.controls['lastName'].dirty && !contactForm.controls['lastName'].valid">
+            <span *ngIf="contactForm.controls['lastName'].hasError('required')">
+              Apelido é um campo obrigatório
+            </span>
+          </div>
+          <!-- PHONE -->
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['phone'].touched && contactForm.controls['phone'].dirty && !contactForm.controls['phone'].valid">
+            <span *ngIf="contactForm.controls['phone'].hasError('required')">
+              Telefone é um campo obrigatório
+            </span>
+            <span *ngIf="contactForm.controls['phone'].hasError('invalidGeneralNumber')">
+              Número inválido
+            </span>
+          </div>
+          <!-- EMAIL -->
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['email'].touched && contactForm.controls['email'].dirty && !contactForm.controls['email'].valid">
+            <span *ngIf="contactForm.controls['email'].hasError('required') ">
+              Email é um campo obrigatório
+            </span>
+            <span *ngIf="contactForm.controls['email'].hasError('email') ">
+              Email inválido
+            </span>
+          </div>
+          <!-- TEXTAREA -->
+          <div class="form-group alert alert-danger text-center" *ngIf="contactForm.controls['description'].touched && contactForm.controls['description'].dirty && !contactForm.controls['description'].valid">
+            <span *ngIf="contactForm.controls['description'].hasError('required') ">
+              Mensagem é um campo obrigatório
+            </span>
+          </div>
+          <!-- END ERROR MESSAGES -->
+          <div class="form-group">
+            <button type="submit" class="btn aoc-btn btn-blue ml-0" [disabled]="!contactForm.valid">Submeter</button>
+            <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Limpar</button>
+          </div>
+        </form>
+        <!-- <pre>Form Values: {{ this.contactForm.value | json }}</pre>
+        <pre>Form Status: {{ this.contactForm.status }}</pre> -->
       </div>
     </div>
   </div>
