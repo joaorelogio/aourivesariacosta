@@ -10,7 +10,7 @@
         <div class="heading_bg">
           <h3 color="grayDark">{{ this.subtitle | uppercase }}</h3>
         </div>
-        <agm-map [mapDraggable]="false" [zoomControl]="false" [zoom]="18" [latitude]="lat" [longitude]="lng">
+        <agm-map [mapDraggable]="false" [zoomControl]="false" [streetViewControl]=false [zoom]="18" [latitude]="lat" [longitude]="lng">
           <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
         </agm-map>
       </div>
