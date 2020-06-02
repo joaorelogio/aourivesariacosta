@@ -11,6 +11,8 @@ export class AppComponent implements OnInit {
   loading: Boolean = false;
   title = 'aourivesariacosta';
 
+  underConstruction = true;
+
   constructor(
     private loadingService: LoadingService
   ) {

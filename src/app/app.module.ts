@@ -33,6 +33,7 @@ import { LoadingService } from './services/loading.service';
 import { MapService } from './services/map.service';
 // TODO: DELETE COMPONENT IN THE END
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
+import { WipComponent } from './components/wip/wip.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { StyleGuideComponent } from './components/style-guide/style-guide.compon
     FooterComponent,
     ProductItemComponent,
     CounterComponent,
-    LoadingComponent
+    LoadingComponent,
+    WipComponent
   ],
   imports: [
     BrowserModule,

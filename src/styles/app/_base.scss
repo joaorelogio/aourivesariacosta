@@ -33,9 +33,6 @@ body {
   font-family: $aoc-content-font;
   font-size: 1em;
   font-size: 14px;
-  border-top-width: 10px;
-  border-top-color: $blueDark;
-  border-top-style: solid;
   @include transition();
 }
 section {
@@ -53,4 +50,20 @@ hr {
 }
 .block-image {
   @extend %block-image
+}
+
+app-wip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/images/bg-wip.jpg');
+  background-size: cover;
+  .container {
+    @extend %center-vert;
+    .logo {
+      width: 336px;
+      margin: auto;
+      
+    }
+  }
 }
