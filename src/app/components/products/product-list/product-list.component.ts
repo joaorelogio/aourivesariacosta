@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../../../services/product.service';
 
 @Component({
@@ -8,22 +7,68 @@ import { ProductService } from '../../../services/product.service';
 })
 export class ProductListComponent implements OnInit {
 
-  products: any;
+  title: string;
+  subtitle: string;
+  allProducts: any;
+  pager: any = {};
+  pagedProducts: any;
+  allCollections: any;
+  filterActive: Boolean = false;
+  applyFilter: string;
+  path: string;
+
+  selectedIndex: number = null;
 
   constructor(
-    protected router: Router,
-    protected route: ActivatedRoute,
     public productService: ProductService
   ) { }
 
   ngOnInit() {
-    this.productService.getAllProducts().subscribe((data) => {
-      this.products = data;
+    this.path = 'products';
+    this.title = 'Produtos';
+    this.subtitle = 'Coleções';
+    this.refreshData();
+    this.getCollections();
+  }
+
+  refreshData(elm?) {
+    this.allProducts = [];
+    if (elm) {
+      this.productService.getProductByCollection(elm).subscribe((data) => {
+        this.allProducts = data;
+        this.setPage(1);
+      });
+    } else {
+      this.productService.getAllProducts().subscribe((data) => {
+        this.allProducts = data;
+        this.setPage(1);
+      });
+    }
+  }
+
+  setPage(page: number) {
+    this.pager = this.productService.getPagination(this.allProducts.length, page);
+    this.pagedProducts = this.allProducts.slice(this.pager.startIndex, this.pager.endIndex + 1);
+  }
+
+  getCollections() {
+    this.productService.getAllCollections().subscribe((data) => {
+      this.allCollections = data;
     });
   }
 
-  openProductDetail(id: string) {
-    this.router.navigate(['product-detail', id], { relativeTo: this.route });
+  filter(elm, index) {
+    this.selectedIndex = index;
+    this.subtitle = 'Coleções';
+    this.applyFilter = '';
+    if (elm) {
+      this.applyFilter = elm;
+      this.subtitle = this.applyFilter;
+      this.refreshData(elm);
+    } else {
+      this.selectedIndex = null;
+      this.refreshData();
+    }
   }
 
 }

@@ -1,0 +1,9 @@
+.history {
+  h1,
+  h3 {
+    @extend %subtitle;
+  }
+  .heading_bg {
+    margin-bottom: 20px;
+  }
+}

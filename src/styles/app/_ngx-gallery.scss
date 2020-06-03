@@ -1,0 +1,9 @@
+ngx-gallery {
+  margin: 0 auto 20px;
+  display: block !important;
+  .ngx-gallery-bullet {
+    &.ngx-gallery-active {
+      background-color: $blueDark !important;
+    }
+  }
+}

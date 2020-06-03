@@ -8,11 +8,18 @@
 	box-sizing: border-box;
 	margin: 0 5px 10px;
 	outline: none;
-	min-width: 115px;
 	cursor: pointer;
+	font-size: 1em;
+	font-size: 12px;
+
+	i {
+		vertical-align: middle;
+		padding: 0 .25rem;
+	}
 	
 	&:focus {
 		outline: 0;
+		box-shadow: none;
 	}
 
 	&:disabled {

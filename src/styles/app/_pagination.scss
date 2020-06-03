@@ -1,0 +1,52 @@
+$bootstrap-color: #dee2e6;
+
+.pagination {
+  @extend %subtitle;
+
+  ul {
+    li {
+      &.page-item {
+        margin: 0;
+
+        &.active {
+          .page-link {
+            background-color: $blue;
+            border-color: $blue;
+            color: $white;
+            &:hover {
+              background-color: $blueDark;
+              border-color: $blueDark;
+              color: $white;
+            }
+          }
+        }
+        &.disabled {
+          .page-link {
+            color: $grayLight;
+            i {
+              color: inherit;
+            }
+          }
+        }
+        .page-link {
+          margin: 0;
+          border-right: 0;
+          color: $grayDark;
+          i {
+            color: inherit;
+          }
+          &:hover {
+            background-color: $grayLight;
+            border-left-color: transparent;
+            border-right-color: transparent;
+          }
+        }
+      }
+      &:nth-last-child(1) {
+        .page-link {
+          border-right: 1px solid #dee2e6;
+        }
+      }
+    }
+  }
+}

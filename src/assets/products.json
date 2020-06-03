@@ -1,86 +1,882 @@
 [
   {
     "id": "0001",
-    "collecttion": "Alianças",
+    "collection": "Alianças",
     "product_text": "Lorem ipsum",
-    "isSlide": false,
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": true,
     "detail": {
-      "picture": "https://via.placeholder.com/300",
-      "particulars": "ouro",
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm"
-    }
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0002",
-    "collecttion": "Aneis Noivado",
+    "collection": "Aneis Noivado",
     "product_text": "Lorem ipsum",
-    "isSlide": false,
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": true,
     "detail": {
-      "picture": "https://via.placeholder.com/300",
-      "particulars": "ouro",
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm"
-    }
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0003",
-    "collecttion": "Filigrana",
+    "collection": "Filigrana",
     "product_text": "Lorem ipsum",
-    "isSlide": false,
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
     "detail": {
-      "picture": "https://via.placeholder.com/300",
-      "particulars": "ouro",
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm"
-    }
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
   },
   {
     "id": "0004",
-    "collecttion": "Marcassites",
+    "collection": "Marcassites",
     "product_text": "Lorem ipsum",
-    "isSlide": false,
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
     "detail": {
-      "picture": "https://via.placeholder.com/300",
-      "particulars": "ouro",
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm"
-    }
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "18-11-2018 00:10:36"
   },
   {
     "id": "0005",
-    "collecttion": "Zirconias",
+    "collection": "Zirconias",
     "product_text": "Lorem ipsum",
-    "isSlide": false,
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": true,
     "detail": {
-      "picture": "https://via.placeholder.com/300",
-      "particulars": "ouro",
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm"
-    }
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "18-11-2018 00:10:36"
   },
   {
     "id": "0006",
-    "collecttion": "Porcelanas",
+    "collection": "Porcelanas",
     "product_text": "Lorem ipsum",
-    "isSlide": false,
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": true,
     "detail": {
-      "picture": "https://via.placeholder.com/300",
-      "particulars": "ouro",
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm"
-    }
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "18-11-2018 00:10:36"
   },
   {
     "id": "0007",
-    "collecttion": "Santos de Portugal",
+    "collection": "Santos de Portugal",
     "product_text": "Lorem ipsum",
-    "isSlide": false,
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
     "detail": {
-      "picture": "https://via.placeholder.com/300",
-      "particulars": "ouro",
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "sizes": "35mm"
-    }
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "18-11-2018 00:10:36"
+  },
+  {
+    "id": "0008",
+    "collection": "Santos de Portugal",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": true,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "18-11-2018 00:10:36"
+  },
+  {
+    "id": "0009",
+    "collection": "Alianças",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
+  },
+  {
+    "id": "0010",
+    "collection": "Aneis Noivado",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
+  },
+  {
+    "id": "0011",
+    "collection": "Filigrana",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
+  },
+  {
+    "id": "0012",
+    "collection": "Marcassites",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
+  },
+  {
+    "id": "0013",
+    "collection": "Zirconias",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
+  },
+  {
+    "id": "0014",
+    "collection": "Porcelanas",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
+  },
+  {
+    "id": "0015",
+    "collection": "Santos de Portugal",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
+  },
+  {
+    "id": "0016",
+    "collection": "Santos de Portugal",
+    "product_text": "Lorem ipsum",
+    "picture": "https://via.placeholder.com/300x200/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+    "highlighted": false,
+    "detail": {
+      "picture": [
+        {
+          "small": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/5b8f94/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/84abaf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/b3cecf/FFFFFF?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/878787/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/cccccc/333333?text=aourivesariacosta.pt"
+        },
+        {
+          "small": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "medium": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt",
+          "big": "https://via.placeholder.com/700x400/ececec/333333?text=aourivesariacosta.pt"
+        }
+      ],
+      "particulars": [
+        "ouro",
+        "prata",
+        "bronze"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sizes": [
+        "26mm",
+        "30mm",
+        "35mm"
+      ],
+      "amount": 29.99,
+      "stock": 20
+    },
+    "create_date": "17-11-2018 00:10:36"
   }
 ]

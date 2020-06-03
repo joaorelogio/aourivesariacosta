@@ -1,16 +1,68 @@
 .products {
   padding: 0;
   .product {
-    &__list {
-      .card {
-        margin-bottom: 30px;
-        button {
-          margin: 0;
+    &__filter {
+      background-color: $grayLight;
+      padding: 15px 0 5px;
+      text-align: right;
+      @include media-smaller-than(768px) {
+        text-align: center;
+      }
+
+      button {
+        &.active {
+          background-color: $blue !important;
+		      border-color: $blue !important;
+          color: $white !important;
+          &:hover {
+            background-color: darken( $blue, 25% ) !important;
+            border-color: darken( $blue, 25% ) !important;
+          }
         }
       }
     }
+    &__list {
+      h1,
+      h3 {
+        @extend %subtitle;
+      }
+      .heading_bg {
+        margin-bottom: 15px;
+      }
+    }
+    &__item {
+      overflow: hidden;
+      margin-bottom: 20px;
+      @include transition();
+      .heading_bg,
+      .heading_bg_line {
+        margin-bottom: .25em;
+      }
+    }
     &__detail {
-      background-color: $gray;
+      &__title {
+        background-color: $grayLight;
+        padding: 15px 0;
+      }
+
+      ul {
+        margin-bottom: .5rem;
+
+        li {
+          border-right-width: 1px;
+          border-right-style: solid;
+          border-right-color: $grayDark;
+          padding: 0 .5em;
+          
+          &:nth-child(1) {
+            padding-left: 0;
+          }
+
+          &:nth-last-child(1) {
+            border: 0;
+          }
+        }
+      }
     }
   }
 }

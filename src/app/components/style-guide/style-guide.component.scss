@@ -17,7 +17,9 @@
     display: none;
     padding: 0 .5rem
   }
-  
+  &.grayLight {
+    background-color: $grayLight
+  }
   &.gray {
     background-color: $gray
   }

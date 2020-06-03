@@ -1,11 +1,11 @@
 <section class="header">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <nav class="navbar navbar-expand-md navbar-light">
-          <a class="navbar-brand logotipo" href="#" routerLink="/home">
-            <img src="assets/logo/logo-fill-small.png" />
-            <img src="assets/logo/logo-fill-text.png" style="display: none;" />
+          <a class="navbar-brand logotipo" id="logotipo" href="#" routerLink="/home">
+            <img src="assets/logo/logo-fill-small.png" alt="A Ourivesaria Costa - Logotipo" />
+            <img src="assets/logo/logo-fill-text.png" alt="A Ourivesaria Costa - Logotipo" style="display: none;" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -13,18 +13,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item" routerLinkActive="active">
+              <li class="nav-item" routerLinkActive="active" (click)="toogleCollapse()">
                 <a class="nav-link" routerLink="/home" href="#">Página Inicial
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item" routerLinkActive="active">
+              <li class="nav-item" routerLinkActive="active" (click)="toogleCollapse()">
                 <a class="nav-link" href="#" routerLink="/history">Histótia</a>
               </li>
-              <li class="nav-item" routerLinkActive="active">
+              <li class="nav-item" routerLinkActive="active" (click)="toogleCollapse()">
                 <a class="nav-link" href="#" routerLink="/products">Produtos</a>
               </li>
-              <li class="nav-item" routerLinkActive="active">
+              <li class="nav-item" routerLinkActive="active" (click)="toogleCollapse()">
                 <a class="nav-link" href="#" routerLink="/contacts">Contactos</a>
               </li>
               <li class="nav-item" routerLinkActive="active">

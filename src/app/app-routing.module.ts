@@ -8,9 +8,10 @@ import { ProductListComponent } from './components/products/product-list/product
 import { ProductDetailComponent } from './components/products/product-detail/product-detail.component';
 // TODO: DELETE COMPONENT IN THE END
 import { StyleGuideComponent } from './components/style-guide/style-guide.component';
+import { WipComponent } from './components/wip/wip.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'wip', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'history', component: HistoryComponent },
   { path: 'products', component: ProductsComponent, children: [
@@ -23,7 +24,8 @@ const routes: Routes = [
     }
   ]},
   { path: 'contacts', component: ContactsComponent },
-  { path: 'styles', component: StyleGuideComponent }
+  { path: 'styles', component: StyleGuideComponent },
+  { path: 'wip', component: WipComponent }
 ];
 
 @NgModule({

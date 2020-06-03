@@ -1,2 +1,12 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<div class="container-body" *ngIf="!underConstruction">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  
+  <ng-template #customLoadingTemplate>
+    <app-loading></app-loading>
+  </ng-template>
+  <ngx-loading #ngxLoading [show]="true" [hidden]="!loading" [config]="{fullScreenBackdrop: true}" [template]="customLoadingTemplate"></ngx-loading>
+</div>
+<app-footer *ngIf="!underConstruction"></app-footer>
+
+<app-wip *ngIf="underConstruction"></app-wip>

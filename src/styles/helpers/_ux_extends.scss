@@ -23,8 +23,36 @@
     }
   }
 }
+%heading_bg {
+  background-image: url(/assets/headings/heading_bg.png);
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+%heading_bg_line {
+  background-image: url(/assets/headings/heading_bg_line.png);
+  background-repeat: repeat-x;
+  background-position: left center;
+}
 %cursor-pointer {
   cursor: pointer;
+}
+
+/* IMAGES HOVER */
+%block-image {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $gray;
+  > img {
+    width: 100%;
+    @include transition();
+    @include scale(1);
+    &:hover {
+      @include scale(1.1);
+    }
+  }
 }
 
 /* CENTER Y */

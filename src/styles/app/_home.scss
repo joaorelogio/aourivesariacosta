@@ -11,4 +11,16 @@
       }
     }
   }
+  &__newest {
+    padding-bottom: 20px;
+    h1 {
+      @extend %subtitle;
+    }
+  }
+  &__highlight {
+    padding-bottom: 0;
+    h1 {
+      @extend %subtitle;
+    }
+  }
 }

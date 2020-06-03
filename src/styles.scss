@@ -7,8 +7,16 @@
 @import '/styles/app/_base';
 @import '/styles/app/_typography';
 @import '/styles/app/_buttons';
+@import '/styles/app/_form';
+@import '/styles/app/_ngx-gallery';
+@import '/styles/app/_pagination';
 
 // MODULES
+@import '/styles/app/_carousel';
 @import '/styles/app/_header';
+@import '/styles/app/_footer';
 @import '/styles/app/_home';
 @import '/styles/app/_products';
+@import '/styles/app/_quote';
+@import '/styles/app/_history';
+@import '/styles/app/_contacts';

@@ -1,59 +1,270 @@
 <!-- STYLE GUIDE -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h1>Style Guide</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h3>Colors</h3>
-      <div class="square gray" placement="top" ngbTooltip="$gray">
-        <span>$gray</span>
-      </div>
-      <div class="square grayDark" placement="top" ngbTooltip="$grayDark">
-        <span>$grayDark</span>
-      </div>
-      <div class="square blueLight" placement="top" ngbTooltip="$blueLight">
-        <span>$blueLight</span>
-      </div>
-      <div class="square blue" placement="top" ngbTooltip="$blue">
-        <span>$blue</span>
-      </div>
-      <div class="square blueDark" placement="top" ngbTooltip="$blueDark">
-        <span>$blueDark</span>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>Style Guide</h1>
       </div>
     </div>
-  </div>
-  <hr/>
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h3>Buttons</h3>
-      <button type="button" class="btn aoc-btn btn-blue">Button</button>
-      <button type="button" class="btn aoc-btn btn-gray">Button</button>
-      <button type="button" class="btn aoc-btn btn-blue btn-line">Button</button>
-      <button type="button" class="btn aoc-btn btn-gray btn-line">Button</button>
+    <hr />
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>Colors</h3>
+        <div class="square grayLight" placement="top" ngbTooltip="$grayLight">
+          <span>$grayLight</span>
+        </div>
+        <div class="square gray" placement="top" ngbTooltip="$gray">
+          <span>$gray</span>
+        </div>
+        <div class="square grayDark" placement="top" ngbTooltip="$grayDark">
+          <span>$grayDark</span>
+        </div>
+        <div class="square blueLight" placement="top" ngbTooltip="$blueLight">
+          <span>$blueLight</span>
+        </div>
+        <div class="square blue" placement="top" ngbTooltip="$blue">
+          <span>$blue</span>
+        </div>
+        <div class="square blueDark" placement="top" ngbTooltip="$blueDark">
+          <span>$blueDark</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>Buttons</h3>
+        <button type="button" class="btn aoc-btn btn-blue">Button</button>
+        <button type="button" class="btn aoc-btn btn-gray">Button</button>
+        <button type="button" class="btn aoc-btn btn-blue btn-line">Button</button>
+        <button type="button" class="btn aoc-btn btn-gray btn-line">Button</button>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>Typography</h3>
+        <h1>h1. heading</h1>
+        <h2>h2. heading</h2>
+        <h3>h3. heading</h3>
+        <h4>h4. heading</h4>
+        <h5>h5. heading</h5>
+        <h6>h6. heading</h6>
+        <div class="heading_bg">
+          <h1>heading_bg</h1>
+        </div>
+        <div class="heading_bg_line">
+          <h1>heading_bg_line</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada accumsan neque, quis placerat mi
+          tincidunt
+          eget. Curabitur condimentum purus volutpat, luctus purus vel, maximus arcu. Etiam gravida ipsum et vehicula
+          imperdiet.
+          Nullam interdum augue non blandit volutpat. Sed sit amet magna luctus, posuere nunc ut, porta urna.
+          <a>Pellentesque tincidunt hendrerit accumsan</a>. Cras sed leo leo. Cras vestibulum interdum metus, vitae
+          congue dolor
+          elementum nec. Duis in justo ac nisl bibendum dignissim eu eu dui.
+          <a href="">Donec pulvinar rhoncus arcu vel tempor</a>. Aenean sagittis dolor nisl, vel accumsan nunc rutrum
+          sit
+          amet. Etiam consequat felis rhoncus felis lobortis, vel maximus nunc mollis. Etiam ut congue eros. Praesent
+          tempor mauris in massa aliquam, in vestibulum dolor varius. Donec luctus tellus id mollis sagittis.</p>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>Forms</h3>
+        <form [formGroup]="exampleForm" novalidate>
+          <div class="form-group">
+            <label for="formExampleInput">Example label</label>
+            <input formControlName="inputExample" type="text" id="formExampleInput" placeholder="Example input">
+            <small id="inputHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail">Email address</label>
+            <input formControlName="emailExample" type="email" id="exampleInputEmail" aria-describedby="emailHelp"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword">Password</label>
+            <input formControlName="passwordExample" type="password" id="exampleInputPassword" aria-describedby="passwordHelp"
+              placeholder="Password">
+            <small id="passwordHelp" class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.</small>
+            <div class="valid-feedback">Success</div>
+            <div class="invalid-feedback">Error</div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <div class="select-wrapper">
+              <label for="exampleFormControlSelect">
+                <select id="exampleFormControlSelect" formControlName="selectExample">
+                  <option value="" class="placeholder" disabled>Selecione</option>
+                  <option value="Option 1">Option 1</option>
+                  <option value="Option 2">Option 2</option>
+                  <option value="Option 3">Option 3</option>
+                  <option value="Option 4">Option 4</option>
+                  <option value="Option 5">Option 5</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea">Example textarea</label>
+            <textarea formControlName="textareaExample" id="exampleFormControlTextarea" rows="3" placeholder="Example textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper">
+              <label>
+                <input formControlName="checkbox1Example" type="checkbox" value="Checkbox Right">
+                <span></span>
+                Checkbox Right
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper">
+              <label>
+                Checkbox Left
+                <input formControlName="checkbox2Example" type="checkbox" value="Checkbox Left">
+                <span></span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="radio-wrapper">
+              <label>
+                <input formControlName="radioExample" name="radioExample" type="radio" value="Radio Right">
+                <span></span>
+                Radio Right
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="radio-wrapper">
+              <label>
+                Radio Left
+                <input formControlName="radioExample" name="radioExample" type="radio" value="Radio Left">
+                <span></span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper checkbox-column">
+              <label>
+                <input formControlName="checkbox1ColumnExample" type="checkbox" value="Checkbox 1 Column">
+                <span></span>
+                Checkbox 1
+              </label>
+              <label>
+                <input formControlName="checkbox2ColumnExample" type="checkbox" value="Checkbox 2 Column">
+                <span></span>
+                Checkbox 2
+              </label>
+              <label>
+                <input formControlName="checkbox3ColumnExample" type="checkbox" value="Checkbox 3 Column">
+                <span></span>
+                Checkbox 2
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="radio-wrapper radio-column">
+              <label>
+                <input formControlName="radioColumnExample" name="radioColumnExample" type="radio" value="Radio 1 Column">
+                <span></span>
+                Radio 1
+              </label>
+              <label>
+                <input formControlName="radioColumnExample" name="radioColumnExample" type="radio" value="Radio 2 Column">
+                <span></span>
+                Radio 2
+              </label>
+              <label>
+                <input formControlName="radioColumnExample" name="radioColumnExample" type="radio" value="Radio 3 Column">
+                <span></span>
+                Radio 3
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper checkbox-inline">
+              <label>
+                <input formControlName="checkbox1InlineExample" type="checkbox" value="Checkbox 1 Inline">
+                <span></span>
+                Checkbox 1
+              </label>
+              <label>
+                <input formControlName="checkbox2InlineExample" type="checkbox" value="Checkbox 2 Inline">
+                <span></span>
+                Checkbox 2
+              </label>
+              <label>
+                <input formControlName="checkbox3InlineExample" type="checkbox" value="Checkbox 3 Inline">
+                <span></span>
+                Checkbox 3
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="radio-wrapper radio-inline">
+              <label>
+                <input formControlName="radioInlineExample" name="radioInlineExample" type="radio" value="Radio 1 Inline">
+                <span></span>
+                Radio 1
+              </label>
+              <label>
+                <input formControlName="radioInlineExample" name="radioInlineExample" type="radio" value="Radio 2 Inline">
+                <span></span>
+                Radio 2
+              </label>
+              <label>
+                <input formControlName="radioInlineExample" name="radioInlineExample" type="radio" value="Radio 3 Inline">
+                <span></span>
+                Radio 3
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="switch-wrapper">
+              <label>
+                <input formControlName="switchExample" type="checkbox" value="Switch On">
+                <span></span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="switch-wrapper">
+              <label>
+                <input formControlName="switchRoundExample" type="checkbox" value="Switch Round On">
+                <span class="round"></span>
+              </label>
+            </div>
+          </div>
+          <!-- ERROR MESSAGES -->
+          <div class="form-group alert alert-danger text-center" *ngIf="exampleForm.controls['emailExample'].touched && exampleForm.controls['emailExample'].dirty && !exampleForm.controls['emailExample'].valid">
+            <span *ngIf="exampleForm.controls['emailExample'].hasError('required') ">
+              Email é um campo obrigatório
+            </span>
+            <span *ngIf="exampleForm.controls['emailExample'].hasError('email') ">
+              Email inválido
+            </span>
+          </div>
+          <!-- END ERROR MESSAGES -->
+          <div class="form-group">
+            <button type="submit" class="btn aoc-btn btn-blue" [disabled]="!exampleForm.valid">Submit</button>
+            <button type="button" class="btn aoc-btn btn-gray" (click)="onReset()">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <pre>Form Values: {{ this.exampleForm.value | json }}</pre>
+        <pre>Form Status: {{ this.exampleForm.status }}</pre>
+      </div>
     </div>
   </div>
-  <hr/>
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <h3>Typography</h3>
-      <h1>h1. heading</h1>
-      <h2>h2. heading</h2>
-      <h3>h3. heading</h3>
-      <h4>h4. heading</h4>
-      <h5>h5. heading</h5>
-      <h6>h6. heading</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada accumsan neque, quis placerat mi tincidunt
-        eget. Curabitur condimentum purus volutpat, luctus purus vel, maximus arcu. Etiam gravida ipsum et vehicula imperdiet.
-        Nullam interdum augue non blandit volutpat. Sed sit amet magna luctus, posuere nunc ut, porta urna.
-        <a>Pellentesque tincidunt hendrerit accumsan</a>. Cras sed leo leo. Cras vestibulum interdum metus, vitae congue dolor
-        elementum nec. Duis in justo ac nisl bibendum dignissim eu eu dui.
-        <a href="">Donec pulvinar rhoncus arcu vel tempor</a>. Aenean sagittis dolor nisl, vel accumsan nunc rutrum sit amet. Etiam
-        consequat felis rhoncus felis lobortis, vel maximus nunc mollis. Etiam ut congue eros. Praesent tempor mauris in
-        massa aliquam, in vestibulum dolor varius. Donec luctus tellus id mollis sagittis.</p>
-    </div>
-  </div>
-</div>
+</section>
 <!-- END STYLE GUIDE -->

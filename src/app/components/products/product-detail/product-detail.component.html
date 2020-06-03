@@ -1,20 +1,43 @@
+<section class="product__detail__title">
+  <div class="container">
+    <div class="row">
+      <div class="col-10">
+        <h1 class="m-0">{{ product?.collection }}</h1>
+      </div>
+      <div class="col-2 d-flex justify-content-end align-items-center">
+        <button type="button" class="btn aoc-btn btn-blue m-0" (click)="goBackTo()">
+          Voltar
+          <i class="fa fa-list"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="product__detail">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <button type="button" class="btn aoc-btn btn-blue btn-icon" (click)="backToList()"><i class="fa fa-angle-left"></i></button>
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <ngx-gallery *ngIf="product" [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <pre>{{ product | json:4 }}</pre>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1>{{ product.collecttion }}</h1>
-        <h3>{{ product.product_text }}</h3>
-        <img src="{{ product.detail.picture }}">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <h4>{{ product?.product_text }}</h4>
+        <p color="grayDark">{{ product?.detail.description }}</p>
+        <hr/>
+        <h5>Características</h5>
+        <h6 color="grayDark">Cor</h6>
+        <ul>
+          <li class="inline" color="grayDark" *ngFor="let part of productParts">{{ part }}</li>
+        </ul>
+        <h6 color="grayDark">Tamanhos</h6>
+        <ul>
+          <li class="inline" color="grayDark" *ngFor="let size of productSizes">{{ size }}</li>
+        </ul>
+        <hr/>
+        <app-counter class="inline w-75" [price]="product?.detail.amount" [stock]="product?.detail.stock" (change)="countChange($event)"></app-counter>
+        <div class="inline w-25">
+          <h4 color="blueDark" class="text-right m-0">{{ total }} €</h4>
+        </div>
+        <p color="gray" class="m-0"><sub>*Limitado ao stock de {{ product?.detail.stock }}</sub></p>
       </div>
     </div>
   </div>

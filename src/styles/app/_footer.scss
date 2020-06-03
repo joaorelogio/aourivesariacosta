@@ -1,0 +1,43 @@
+$footer-height: 60px;
+.container-body {
+  border-top-width: 10px;
+  border-top-color: $blueDark;
+  border-top-style: solid;
+  @include calc(min-height, 100% - #{$footer-height})
+}
+.footer {
+  background-color: $gray;
+  height: $footer-height;
+  width: 100%;
+  z-index: 10;
+  padding: 0;
+  @include media-smaller-than(769px) {
+    .container {
+      text-align: center;
+      img {
+        display: none;
+      }
+      small {
+        top: 0;
+        @include transform(none);
+        float: none;
+      }
+    }
+  }
+  @include media-bigger-than(768px) {
+    .container {
+      img {
+        width: 100px;
+      }
+      small {
+        float: right;
+      }
+    }
+  }
+  .container {
+    @extend %center-vert;
+    small {
+      @extend %center-vert;
+    }
+  }
+}

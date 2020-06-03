@@ -5,22 +5,30 @@ import * as $ from 'jquery';
   selector: 'app-header',
   templateUrl: './header.component.html',
 })
-export class HeaderComponent implements OnInit {
+
+export class HeaderComponent implements OnInit  {
 
   constructor() { }
 
   ngOnInit() {
+    this.initHoverLogo();
   }
 
   initHoverLogo() {
     let idx = 0;
     fade();
     function fade() {
-      if (idx >= $('#logotipo img').length) {
-        idx = 0;
+        if (idx >= $('#logotipo img').length) {
+          idx = 0;
+        }
         $('#logotipo img').eq(idx).fadeIn(1500).delay(3000).fadeOut(1500, fade);
         idx++;
-      }
     }
   }
+
+  toogleCollapse() {
+    $('.navbar-toggler').addClass('collapsed').attr('aria-expanded', 'false');
+    $('#navbarNav').removeClass('show');
+  }
+
 }
