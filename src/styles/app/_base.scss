@@ -71,8 +71,11 @@ app-wip {
     }
     h1 {
       font-family: $aoc-subtitle-font;
-      font-weight: 700;
       font-size: 5vw;
+      @include media-smaller-than($max-tablet-width) {
+        font-size: 10vw;
+      };
+
     }
   }
 }
