@@ -58,12 +58,21 @@ app-wip {
   height: 100%;
   background-image: url('./assets/images/bg-wip.jpg');
   background-size: cover;
+  background-position: center;
   .container {
     @extend %center-vert;
     .logo {
-      width: 336px;
+      max-width: 336px;
+      width: 100%;
       margin: auto;
-      
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      font-family: $aoc-subtitle-font;
+      font-weight: 700;
+      font-size: 5vw;
     }
   }
 }
