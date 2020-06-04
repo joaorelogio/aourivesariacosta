@@ -25,7 +25,8 @@ const routes: Routes = [
   ]},
   { path: 'contacts', component: ContactsComponent },
   { path: 'styles', component: StyleGuideComponent },
-  { path: 'wip', component: WipComponent }
+  // Under construction page
+  { path: '', component: WipComponent }
 ];
 
 @NgModule({

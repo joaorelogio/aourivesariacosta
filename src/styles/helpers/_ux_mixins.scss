@@ -281,7 +281,7 @@ $max-desktop-width: 1280px;
   }
 }
 @mixin tablet {
-  @media (min-width: #{$min-mobile-width}) and (max-width: #{$max-tablet-width}) {
+  @media (min-width: #{$min-tablet-width}) and (max-width: #{$max-tablet-width}) {
     @content;
   }
 }
